@@ -1,0 +1,6 @@
+{
+  "parent": "another_furniture:block/template/curtain_right_bottom",
+  "textures": {
+    "curtain": "dyelation:block/another_furniture/curtain/amber_right_bottom"
+  }
+}

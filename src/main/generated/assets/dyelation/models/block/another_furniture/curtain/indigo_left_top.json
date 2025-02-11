@@ -1,0 +1,6 @@
+{
+  "parent": "another_furniture:block/template/curtain_left_top",
+  "textures": {
+    "curtain": "dyelation:block/another_furniture/curtain/indigo_left_top"
+  }
+}

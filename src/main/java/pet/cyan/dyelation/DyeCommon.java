@@ -48,6 +48,14 @@ public class DyeCommon {
         return modId + "/" + color.dye.getName() + "_" + itemName;
     }
 
+    public static Identifier getModdedBlockModelID(String modId, Color color, String itemName, String suffix) {
+        return new Identifier(Dyelation.MOD_ID, "block/"+ modId + "/"+ itemName + "/" + color.dye.getName() + "_" + suffix);
+    }
+
+    public static Identifier getModdedBlockModelID(String modId, Color color, String itemName) {
+        return new Identifier(Dyelation.MOD_ID, "block/"+ modId + "/"+ itemName + "/" + color.dye.getName());
+    }
+
     public static <I extends ItemConvertible> void addInbetweenItemGroup(RegistryKey<ItemGroup> itemGroup, EnumMap<Color, I> items, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
         // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
         ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> {

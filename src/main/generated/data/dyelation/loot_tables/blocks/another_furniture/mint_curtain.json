@@ -11,6 +11,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "dyelation:another_furniture/mint_curtain",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "vertical": "up"
+              }
+            }
+          ],
           "name": "dyelation:another_furniture/mint_curtain"
         }
       ],

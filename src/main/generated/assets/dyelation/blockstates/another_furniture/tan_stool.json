@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/tan"
+      },
+      "when": {
+        "low": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/tan_low"
+      },
+      "when": {
+        "low": "true"
+      }
+    }
+  ]
+}

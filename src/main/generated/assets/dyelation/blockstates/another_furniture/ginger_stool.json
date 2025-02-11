@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/ginger"
+      },
+      "when": {
+        "low": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/ginger_low"
+      },
+      "when": {
+        "low": "true"
+      }
+    }
+  ]
+}

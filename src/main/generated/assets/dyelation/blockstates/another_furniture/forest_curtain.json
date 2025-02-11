@@ -1,0 +1,392 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "single",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_top"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_bottom"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_top"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_bottom"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle"
+      },
+      "when": {
+        "facing": "north",
+        "horizontal": "middle",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_top"
+      },
+      "when": {
+        "facing": "north",
+        "open": "false",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_bottom"
+      },
+      "when": {
+        "facing": "north",
+        "open": "false",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "single",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_top",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_bottom",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_top",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_bottom",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "horizontal": "middle",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_top",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "open": "false",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_bottom",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "open": "false",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "single",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_top",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_bottom",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_top",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_bottom",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "horizontal": "middle",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_top",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "open": "false",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_bottom",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "open": "false",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "single",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_top",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_left_bottom",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "left",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_top",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_right_bottom",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "right",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_middle",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "horizontal": "middle",
+        "open": "true",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_top",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "open": "false",
+        "vertical": "up"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/curtain/forest_closed_bottom",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "open": "false",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/air"
+      },
+      "when": {
+        "horizontal": "single",
+        "open": "true",
+        "vertical": "down"
+      }
+    },
+    {
+      "apply": {
+        "model": "minecraft:block/air"
+      },
+      "when": {
+        "horizontal": "middle",
+        "open": "true",
+        "vertical": "down"
+      }
+    }
+  ]
+}

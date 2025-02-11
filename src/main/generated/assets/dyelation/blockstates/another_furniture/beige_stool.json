@@ -1,0 +1,20 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/beige"
+      },
+      "when": {
+        "low": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "dyelation:block/another_furniture/stool/beige_low"
+      },
+      "when": {
+        "low": "true"
+      }
+    }
+  ]
+}

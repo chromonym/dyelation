@@ -2,7 +2,13 @@ package pet.cyan.dyelation;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.starfish_studios.another_furniture.block.CurtainBlock;
+import com.starfish_studios.another_furniture.block.StoolBlock;
+import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.registry.AFBlockTags;
 import com.starfish_studios.another_furniture.registry.AFBlocks;
 import com.starfish_studios.another_furniture.registry.AFItemTags;
@@ -12,9 +18,16 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.BlockStateVariant;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.MultipartBlockStateSupplier;
+import net.minecraft.data.client.VariantSettings;
+import net.minecraft.data.client.When;
 import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -25,6 +38,8 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 import pet.cyan.dyelation.interop.AnotherFurniture;
 
 public class DyelationDataGenerator implements DataGeneratorEntrypoint {
@@ -35,6 +50,18 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(DyeBlockLootTables::new);
 		pack.addProvider(DyeItemTagGenerator::new);
 		pack.addProvider(DyeBlockTagGenerator::new);
+		pack.addProvider(DyeModelGenerator::new);
+	}
+
+	public static Supplier<JsonElement> parentWithTexturesModel(String parent, String... textureNames) {
+		JsonObject modelFile = new JsonObject();
+		modelFile.addProperty("parent", parent);
+		JsonObject textures = new JsonObject();
+		for (var i = 0; i<textureNames.length; i+=2) {
+			textures.addProperty(textureNames[i], textureNames[i+1]);
+		}
+		modelFile.add("textures", textures);
+		return () -> modelFile;
 	}
 
 	private static class DyeRecipeGenerator extends FabricRecipeProvider {
@@ -104,7 +131,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 			DyeCommon.doSomethingForAllColors(color -> {
 				// ANOTHER FURNITURE
 				addDrop(AnotherFurniture.STOOLS.get(color));
-				addDrop(AnotherFurniture.CURTAINS.get(color));
+				addDrop(AnotherFurniture.CURTAINS.get(color), dropsWithProperty(AnotherFurniture.CURTAINS.get(color), CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP));
 				addDrop(AnotherFurniture.LAMPS.get(color));
 				addDrop(AnotherFurniture.SOFAS.get(color));
 				addDrop(AnotherFurniture.TALL_STOOLS.get(color));
@@ -144,6 +171,164 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				getOrCreateTagBuilder(AFBlockTags.SOFAS).add(AnotherFurniture.SOFAS.get(color));
 				getOrCreateTagBuilder(AFBlockTags.TALL_STOOLS).add(AnotherFurniture.TALL_STOOLS.get(color));
 			});
+		}
+	}
+
+	private static class DyeModelGenerator extends FabricModelProvider {
+		public DyeModelGenerator(FabricDataOutput output) {
+			super(output);
+		}
+
+		@Override
+		public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+			DyeCommon.doSomethingForAllColors(color -> {
+				// ANOTHER FURNITURE
+				// stools
+				blockStateModelGenerator.blockStateCollector.accept(MultipartBlockStateSupplier.create(AnotherFurniture.STOOLS.get(color))
+				.with(When.create().set(StoolBlock.LOW, false), BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "stool")))
+				.with(When.create().set(StoolBlock.LOW, true), BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "stool", "low")))
+				);
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "stool"), parentWithTexturesModel(
+					"another_furniture:block/template/stool",
+					"bottom", "another_furniture:block/stool/bottom",
+					"legs", "another_furniture:block/stool/legs",
+					"side", "dyelation:block/another_furniture/stool/"+color.asString()+"_side",
+					"top", "dyelation:block/another_furniture/stool/"+color.asString()+"_top"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "stool", "low"), parentWithTexturesModel(
+					"another_furniture:block/template/stool_low",
+					"bottom", "another_furniture:block/stool/bottom",
+					"legs", "another_furniture:block/stool/legs",
+					"side", "dyelation:block/another_furniture/stool/"+color.asString()+"_side",
+					"top", "dyelation:block/another_furniture/stool/"+color.asString()+"_top"));
+				blockStateModelGenerator.registerParentedItemModel(AnotherFurniture.STOOLS.get(color), DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "stool"));
+
+				// curtains
+				blockStateModelGenerator.blockStateCollector.accept(MultipartBlockStateSupplier.create(AnotherFurniture.CURTAINS.get(color))
+					// north
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.SINGLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.MIDDLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_top")))
+					.with(When.create().set(CurtainBlock.FACING, Direction.NORTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_bottom")))
+					// east
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.SINGLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.MIDDLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					.with(When.create().set(CurtainBlock.FACING, Direction.EAST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R90))
+					// south
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.SINGLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.MIDDLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					.with(When.create().set(CurtainBlock.FACING, Direction.SOUTH).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R180))
+					// west
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.SINGLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.LEFT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.RIGHT).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.MIDDLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.UP).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_top"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					.with(When.create().set(CurtainBlock.FACING, Direction.WEST).set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.OPEN, false),
+						BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_bottom"))
+						.put(VariantSettings.Y, VariantSettings.Rotation.R270))
+					// adirectional
+					.with(When.create().set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.SINGLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, Identifier.of("minecraft","block/air")))
+					.with(When.create().set(CurtainBlock.VERTICAL_CONNECTION_TYPE, Direction.DOWN).set(CurtainBlock.HORIZONTAL_CONNECTION_TYPE, HorizontalConnectionType.MIDDLE).set(CurtainBlock.OPEN, true),
+						BlockStateVariant.create().put(VariantSettings.MODEL, Identifier.of("minecraft","block/air")))
+				);
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_bottom"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_closed_bottom",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_closed_bottom"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "closed_top"), parentWithTexturesModel(
+						"another_furniture:block/template/curtain_closed_top",
+						"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_closed_top"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_left_bottom",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_left_bottom"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_left_top",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_left_top"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_middle",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_middle"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_right_bottom",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_right_bottom"));
+				blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top"), parentWithTexturesModel(
+					"another_furniture:block/template/curtain_right_top",
+					"curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_right_top"));
+			});
+		}
+
+		@Override
+		public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+			//
 		}
 	}
 

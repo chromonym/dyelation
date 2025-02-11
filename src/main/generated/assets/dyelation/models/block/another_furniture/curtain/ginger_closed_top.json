@@ -1,0 +1,6 @@
+{
+  "parent": "another_furniture:block/template/curtain_closed_top",
+  "textures": {
+    "curtain": "dyelation:block/another_furniture/curtain/ginger_closed_top"
+  }
+}

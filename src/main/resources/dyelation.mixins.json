@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "pet.cyan.dyelation.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"plugin": "pet.cyan.dyelation.mixin.ConfigPlugin",
+	"mixins": [
+		"ExampleMixin",
+		"another_furniture.LampBlockMixin",
+		"another_furniture.LampConnectorBlockMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

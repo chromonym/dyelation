@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stools",
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "item": "dye_depot:coral_wool"
+    }
+  },
+  "pattern": [
+    "pwp",
+    "s s"
+  ],
+  "result": {
+    "count": 3,
+    "item": "dyelation:another_furniture/coral_stool"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sofas",
+  "key": {
+    "p": {
+      "tag": "minecraft:planks"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "w": {
+      "item": "dye_depot:mint_wool"
+    }
+  },
+  "pattern": [
+    "pw ",
+    "pww",
+    "s s"
+  ],
+  "result": {
+    "count": 3,
+    "item": "dyelation:another_furniture/mint_sofa"
+  },
+  "show_notification": true
+}

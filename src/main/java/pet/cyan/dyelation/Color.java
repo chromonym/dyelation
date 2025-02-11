@@ -1,0 +1,66 @@
+package pet.cyan.dyelation;
+
+import com.ninni.dye_depot.registry.DDDyes;
+import com.ninni.dye_depot.registry.DDItems;
+
+import net.minecraft.item.Item;
+import net.minecraft.util.StringIdentifiable;
+
+public enum Color implements StringIdentifiable {
+    MAROON (DDItems.MAROON_DYE, DDItems.MAROON_WOOL, DDItems.MAROON_CARPET, DDItems.MAROON_TERRACOTTA, DDItems.MAROON_CONCRETE, DDItems.MAROON_CONCRETE_POWDER, DDItems.MAROON_GLAZED_TERRACOTTA, DDItems.MAROON_STAINED_GLASS, DDItems.MAROON_STAINED_GLASS_PANE, DDItems.MAROON_SHULKER_BOX, DDItems.MAROON_CANDLE, DDItems.MAROON_BANNER, DDItems.MAROON_BED, DDItems.MAROON_DYE_BASKET, DDDyes.MAROON),
+    ROSE   (DDItems.ROSE_DYE,   DDItems.ROSE_WOOL,   DDItems.ROSE_CARPET,   DDItems.ROSE_TERRACOTTA,   DDItems.ROSE_CONCRETE,   DDItems.ROSE_CONCRETE_POWDER,   DDItems.ROSE_GLAZED_TERRACOTTA,   DDItems.ROSE_STAINED_GLASS,   DDItems.ROSE_STAINED_GLASS_PANE,   DDItems.ROSE_SHULKER_BOX,   DDItems.ROSE_CANDLE,   DDItems.ROSE_BANNER,   DDItems.ROSE_BED,   DDItems.ROSE_DYE_BASKET,   DDDyes.ROSE),
+    CORAL  (DDItems.CORAL_DYE,  DDItems.CORAL_WOOL,  DDItems.CORAL_CARPET,  DDItems.CORAL_TERRACOTTA,  DDItems.CORAL_CONCRETE,  DDItems.CORAL_CONCRETE_POWDER,  DDItems.CORAL_GLAZED_TERRACOTTA,  DDItems.CORAL_STAINED_GLASS,  DDItems.CORAL_STAINED_GLASS_PANE,  DDItems.CORAL_SHULKER_BOX,  DDItems.CORAL_CANDLE,  DDItems.CORAL_BANNER,  DDItems.CORAL_BED,  DDItems.CORAL_DYE_BASKET,  DDDyes.CORAL),
+    INDIGO (DDItems.INDIGO_DYE, DDItems.INDIGO_WOOL, DDItems.INDIGO_CARPET, DDItems.INDIGO_TERRACOTTA, DDItems.INDIGO_CONCRETE, DDItems.INDIGO_CONCRETE_POWDER, DDItems.INDIGO_GLAZED_TERRACOTTA, DDItems.INDIGO_STAINED_GLASS, DDItems.INDIGO_STAINED_GLASS_PANE, DDItems.INDIGO_SHULKER_BOX, DDItems.INDIGO_CANDLE, DDItems.INDIGO_BANNER, DDItems.INDIGO_BED, DDItems.INDIGO_DYE_BASKET, DDDyes.INDIGO),
+    NAVY   (DDItems.NAVY_DYE,   DDItems.NAVY_WOOL,   DDItems.NAVY_CARPET,   DDItems.NAVY_TERRACOTTA,   DDItems.NAVY_CONCRETE,   DDItems.NAVY_CONCRETE_POWDER,   DDItems.NAVY_GLAZED_TERRACOTTA,   DDItems.NAVY_STAINED_GLASS,   DDItems.NAVY_STAINED_GLASS_PANE,   DDItems.NAVY_SHULKER_BOX,   DDItems.NAVY_CANDLE,   DDItems.NAVY_BANNER,   DDItems.NAVY_BED,   DDItems.NAVY_DYE_BASKET,   DDDyes.NAVY),
+    SLATE  (DDItems.SLATE_DYE,  DDItems.SLATE_WOOL,  DDItems.SLATE_CARPET,  DDItems.SLATE_TERRACOTTA,  DDItems.SLATE_CONCRETE,  DDItems.SLATE_CONCRETE_POWDER,  DDItems.SLATE_GLAZED_TERRACOTTA,  DDItems.SLATE_STAINED_GLASS,  DDItems.SLATE_STAINED_GLASS_PANE,  DDItems.SLATE_SHULKER_BOX,  DDItems.SLATE_CANDLE,  DDItems.SLATE_BANNER,  DDItems.SLATE_BED,  DDItems.SLATE_DYE_BASKET,  DDDyes.SLATE),
+    OLIVE  (DDItems.OLIVE_DYE,  DDItems.OLIVE_WOOL,  DDItems.OLIVE_CARPET,  DDItems.OLIVE_TERRACOTTA,  DDItems.OLIVE_CONCRETE,  DDItems.OLIVE_CONCRETE_POWDER,  DDItems.OLIVE_GLAZED_TERRACOTTA,  DDItems.OLIVE_STAINED_GLASS,  DDItems.OLIVE_STAINED_GLASS_PANE,  DDItems.OLIVE_SHULKER_BOX,  DDItems.OLIVE_CANDLE,  DDItems.OLIVE_BANNER,  DDItems.OLIVE_BED,  DDItems.OLIVE_DYE_BASKET,  DDDyes.OLIVE),
+    AMBER  (DDItems.AMBER_DYE,  DDItems.AMBER_WOOL,  DDItems.AMBER_CARPET,  DDItems.AMBER_TERRACOTTA,  DDItems.AMBER_CONCRETE,  DDItems.AMBER_CONCRETE_POWDER,  DDItems.AMBER_GLAZED_TERRACOTTA,  DDItems.AMBER_STAINED_GLASS,  DDItems.AMBER_STAINED_GLASS_PANE,  DDItems.AMBER_SHULKER_BOX,  DDItems.AMBER_CANDLE,  DDItems.AMBER_BANNER,  DDItems.AMBER_BED,  DDItems.AMBER_DYE_BASKET,  DDDyes.AMBER),
+    BEIGE  (DDItems.BEIGE_DYE,  DDItems.BEIGE_WOOL,  DDItems.BEIGE_CARPET,  DDItems.BEIGE_TERRACOTTA,  DDItems.BEIGE_CONCRETE,  DDItems.BEIGE_CONCRETE_POWDER,  DDItems.BEIGE_GLAZED_TERRACOTTA,  DDItems.BEIGE_STAINED_GLASS,  DDItems.BEIGE_STAINED_GLASS_PANE,  DDItems.BEIGE_SHULKER_BOX,  DDItems.BEIGE_CANDLE,  DDItems.BEIGE_BANNER,  DDItems.BEIGE_BED,  DDItems.BEIGE_DYE_BASKET,  DDDyes.BEIGE),
+    TEAL   (DDItems.TEAL_DYE,   DDItems.TEAL_WOOL,   DDItems.TEAL_CARPET,   DDItems.TEAL_TERRACOTTA,   DDItems.TEAL_CONCRETE,   DDItems.TEAL_CONCRETE_POWDER,   DDItems.TEAL_GLAZED_TERRACOTTA,   DDItems.TEAL_STAINED_GLASS,   DDItems.TEAL_STAINED_GLASS_PANE,   DDItems.TEAL_SHULKER_BOX,   DDItems.TEAL_CANDLE,   DDItems.TEAL_BANNER,   DDItems.TEAL_BED,   DDItems.TEAL_DYE_BASKET,   DDDyes.TEAL),
+    MINT   (DDItems.MINT_DYE,   DDItems.MINT_WOOL,   DDItems.MINT_CARPET,   DDItems.MINT_TERRACOTTA,   DDItems.MINT_CONCRETE,   DDItems.MINT_CONCRETE_POWDER,   DDItems.MINT_GLAZED_TERRACOTTA,   DDItems.MINT_STAINED_GLASS,   DDItems.MINT_STAINED_GLASS_PANE,   DDItems.MINT_SHULKER_BOX,   DDItems.MINT_CANDLE,   DDItems.MINT_BANNER,   DDItems.MINT_BED,   DDItems.MINT_DYE_BASKET,   DDDyes.MINT),
+    AQUA   (DDItems.AQUA_DYE,   DDItems.AQUA_WOOL,   DDItems.AQUA_CARPET,   DDItems.AQUA_TERRACOTTA,   DDItems.AQUA_CONCRETE,   DDItems.AQUA_CONCRETE_POWDER,   DDItems.AQUA_GLAZED_TERRACOTTA,   DDItems.AQUA_STAINED_GLASS,   DDItems.AQUA_STAINED_GLASS_PANE,   DDItems.AQUA_SHULKER_BOX,   DDItems.AQUA_CANDLE,   DDItems.AQUA_BANNER,   DDItems.AQUA_BED,   DDItems.AQUA_DYE_BASKET,   DDDyes.AQUA),
+    VERDANT(DDItems.VERDANT_DYE,DDItems.VERDANT_WOOL,DDItems.VERDANT_CARPET,DDItems.VERDANT_TERRACOTTA,DDItems.VERDANT_CONCRETE,DDItems.VERDANT_CONCRETE_POWDER,DDItems.VERDANT_GLAZED_TERRACOTTA,DDItems.VERDANT_STAINED_GLASS,DDItems.VERDANT_STAINED_GLASS_PANE,DDItems.VERDANT_SHULKER_BOX,DDItems.VERDANT_CANDLE,DDItems.VERDANT_BANNER,DDItems.VERDANT_BED,DDItems.VERDANT_DYE_BASKET,DDDyes.VERDANT),
+    FOREST (DDItems.FOREST_DYE, DDItems.FOREST_WOOL, DDItems.FOREST_CARPET, DDItems.FOREST_TERRACOTTA, DDItems.FOREST_CONCRETE, DDItems.FOREST_CONCRETE_POWDER, DDItems.FOREST_GLAZED_TERRACOTTA, DDItems.FOREST_STAINED_GLASS, DDItems.FOREST_STAINED_GLASS_PANE, DDItems.FOREST_SHULKER_BOX, DDItems.FOREST_CANDLE, DDItems.FOREST_BANNER, DDItems.FOREST_BED, DDItems.FOREST_DYE_BASKET, DDDyes.FOREST),
+    GINGER (DDItems.GINGER_DYE, DDItems.GINGER_WOOL, DDItems.GINGER_CARPET, DDItems.GINGER_TERRACOTTA, DDItems.GINGER_CONCRETE, DDItems.GINGER_CONCRETE_POWDER, DDItems.GINGER_GLAZED_TERRACOTTA, DDItems.GINGER_STAINED_GLASS, DDItems.GINGER_STAINED_GLASS_PANE, DDItems.GINGER_SHULKER_BOX, DDItems.GINGER_CANDLE, DDItems.GINGER_BANNER, DDItems.GINGER_BED, DDItems.GINGER_DYE_BASKET, DDDyes.GINGER),
+    TAN    (DDItems.TAN_DYE,    DDItems.TAN_WOOL,    DDItems.TAN_CARPET,    DDItems.TAN_TERRACOTTA,    DDItems.TAN_CONCRETE,    DDItems.TAN_CONCRETE_POWDER,    DDItems.TAN_GLAZED_TERRACOTTA,    DDItems.TAN_STAINED_GLASS,    DDItems.TAN_STAINED_GLASS_PANE,    DDItems.TAN_SHULKER_BOX,    DDItems.TAN_CANDLE,    DDItems.TAN_BANNER,    DDItems.TAN_BED,    DDItems.TAN_DYE_BASKET,    DDDyes.TAN);
+
+    public final Item dyeItem;
+    public final Item wool;
+    public final Item carpet;
+    public final Item terracotta;
+    public final Item concrete;
+    public final Item concrete_powder;
+    public final Item glazed_terracotta;
+    public final Item stained_glass;
+    public final Item stained_glass_pane;
+    public final Item shulker_box;
+    public final Item candle;
+    public final Item banner;
+    public final Item bed;
+    public final Item dye_basket;
+    public final DDDyes dye;
+
+    Color(Item dyeItem, Item wool, Item carpet, Item terracotta, Item concrete, Item concrete_powder, Item glazed_terracotta,
+            Item stained_glass, Item stained_glass_pane, Item shulker_box, Item candle, Item banner, Item bed, Item dye_basket, DDDyes dye) {
+        this.dyeItem = dyeItem;
+        this.wool = wool;
+        this.carpet = carpet;
+        this.terracotta = terracotta;
+        this.concrete = concrete;
+        this.concrete_powder = concrete_powder;
+        this.glazed_terracotta = glazed_terracotta;
+        this.stained_glass = stained_glass;
+        this.stained_glass_pane = stained_glass_pane;
+        this.shulker_box = shulker_box;
+        this.candle = candle;
+        this.banner = banner;
+        this.bed = bed;
+        this.dye_basket = dye_basket;
+        this.dye = dye;
+    }
+
+    @Override
+    public String asString() {
+        return dye.asString();
+    }
+}

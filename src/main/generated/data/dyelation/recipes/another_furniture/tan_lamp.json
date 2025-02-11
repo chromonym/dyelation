@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "lamps",
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "t": {
+      "item": "minecraft:torch"
+    },
+    "w": {
+      "item": "dye_depot:tan_wool"
+    }
+  },
+  "pattern": [
+    " w ",
+    "wtw",
+    " s "
+  ],
+  "result": {
+    "count": 3,
+    "item": "dyelation:another_furniture/tan_lamp"
+  },
+  "show_notification": true
+}

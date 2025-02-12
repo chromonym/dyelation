@@ -1,6 +1,6 @@
 {
   "parent": "another_furniture:block/template/curtain_left_top",
   "textures": {
-    "curtain": "dyelation:block/another_furniture/curtain/navy_left_top"
+    "curtain": "dyelation:block/another_furniture/curtain/navy_open_top"
   }
 }

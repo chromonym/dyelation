@@ -170,19 +170,19 @@ public class AnotherFurnitureDatagen {
                 "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_closed_top"));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_bottom"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/curtain_left_bottom",
-            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_left_bottom"));
+            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_open_bottom"));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "left_top"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/curtain_left_top",
-            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_left_top"));
+            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_open_top"));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "middle"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/curtain_middle",
             "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_middle"));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_bottom"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/curtain_right_bottom",
-            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_right_bottom"));
+            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_open_bottom"));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "curtain", "right_top"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/curtain_right_top",
-            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_right_top"));
+            "curtain", "dyelation:block/another_furniture/curtain/"+color.asString()+"_open_top"));
         
         // lamps
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(AnotherFurniture.LAMPS.get(color))

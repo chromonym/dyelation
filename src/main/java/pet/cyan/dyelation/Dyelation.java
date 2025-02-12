@@ -22,7 +22,7 @@ public class Dyelation implements ModInitializer {
 		// Proceed with mild caution.
 		FabricLoader fl = FabricLoader.getInstance();
 		if (fl.isModLoaded("another_furniture")) {
-			LOGGER.info("Another Furniture loaded, running setup");
+			LOGGER.info("Another Furniture loaded, running common setup");
 			AnotherFurniture.initialize();
 		}
 	}

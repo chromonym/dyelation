@@ -1,9 +1,9 @@
 {
   "parent": "another_furniture:block/template/sofa",
   "textures": {
-    "back": "dyelation:dyelation:block/another_furniture/sofa/maroon_back",
-    "seat_back_1": "dyelation:dyelation:block/another_furniture/sofa/maroon_seat_back_1",
-    "seat_front": "dyelation:dyelation:block/another_furniture/sofa/maroon_seat_front",
-    "seat_top": "dyelation:dyelation:block/another_furniture/sofa/maroon_seat_single"
+    "back": "dyelation:block/another_furniture/sofa/maroon_back",
+    "seat_back_1": "dyelation:block/another_furniture/sofa/maroon_seat_back_1",
+    "seat_front": "dyelation:block/another_furniture/sofa/maroon_seat_front",
+    "seat_top": "dyelation:block/another_furniture/sofa/maroon_seat_single"
   }
 }

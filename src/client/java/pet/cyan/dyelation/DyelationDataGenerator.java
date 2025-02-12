@@ -1,5 +1,6 @@
 package pet.cyan.dyelation;
 
+import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
 
@@ -11,6 +12,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.Pack;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -33,6 +35,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(DyeItemTagGenerator::new);
 		pack.addProvider(DyeBlockTagGenerator::new);
 		pack.addProvider(DyeModelGenerator::new);
+		pack.addProvider(DyeEnglishLangGenerator::new);
 	}
 
 	private static class DyeRecipeGenerator extends FabricRecipeProvider {
@@ -86,7 +89,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				// ANOTHER FURNITURE
 				getOrCreateTagBuilder(AFBlockTags.STOOLS).add(AnotherFurniture.STOOLS.get(color));
 				getOrCreateTagBuilder(AFBlockTags.CURTAINS).add(AnotherFurniture.CURTAINS.get(color));
-				getOrCreateTagBuilder(AFBlockTags.LAMPS).add(AnotherFurniture.LAMPS.get(color));
+				getOrCreateTagBuilder(AFBlockTags.LAMPS).add(AnotherFurniture.LAMPS.get(color)).add(AnotherFurniture.LAMP_CONNECTORS.get(color));
 				getOrCreateTagBuilder(AFBlockTags.SOFAS).add(AnotherFurniture.SOFAS.get(color));
 				getOrCreateTagBuilder(AFBlockTags.TALL_STOOLS).add(AnotherFurniture.TALL_STOOLS.get(color));
 			});
@@ -113,6 +116,27 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AnotherFurnitureDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
+	}
+
+	private static class DyeEnglishLangGenerator extends FabricLanguageProvider {
+
+		private DyeEnglishLangGenerator(FabricDataOutput dataGenerator) {
+			super(dataGenerator, "en_us");
+		}
+
+		@Override
+		public void generateTranslations(TranslationBuilder translationBuilder) {
+			DyeCommon.doSomethingForAllColors(color -> {
+				AnotherFurnitureDatagen.langEnglish(translationBuilder, color);
+			});
+			try {
+				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();
+				translationBuilder.add(path);
+			} catch (Exception e) {
+				throw new RuntimeException("Failed to add existing language file!", e);
+			}
+		}
+		
 	}
 
 }

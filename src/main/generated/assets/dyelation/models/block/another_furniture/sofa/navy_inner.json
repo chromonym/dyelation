@@ -1,9 +1,9 @@
 {
   "parent": "another_furniture:block/template/sofa_inner",
   "textures": {
-    "back": "dyelation:dyelation:block/another_furniture/sofa/navy_back",
-    "seat_back_2": "dyelation:dyelation:block/another_furniture/sofa/navy_seat_back_2",
-    "seat_front": "dyelation:dyelation:block/another_furniture/sofa/navy_seat_front",
-    "seat_top": "dyelation:dyelation:block/another_furniture/sofa/navy_seat_inner"
+    "back": "dyelation:block/another_furniture/sofa/navy_back",
+    "seat_back_2": "dyelation:block/another_furniture/sofa/navy_seat_back_2",
+    "seat_front": "dyelation:block/another_furniture/sofa/navy_seat_front",
+    "seat_top": "dyelation:block/another_furniture/sofa/navy_seat_inner"
   }
 }

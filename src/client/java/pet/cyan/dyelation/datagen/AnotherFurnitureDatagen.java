@@ -13,6 +13,8 @@ import com.starfish_studios.another_furniture.registry.AFBlocks;
 import com.starfish_studios.another_furniture.registry.AFItemTags;
 
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider.TranslationBuilder;
+import net.fabricmc.loader.impl.util.StringUtil;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.BlockStateVariant;
@@ -326,52 +328,52 @@ public class AnotherFurnitureDatagen {
         );
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_single"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_back_1", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_single").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_back_1", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa", "inner"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa_inner",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_inner"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_back_2", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_2"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_inner").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_back_2", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_2").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa", "left"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa_left",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_edge"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_side", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side"),
-            "seat_back_1", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_edge").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_side", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side").toString(),
+            "seat_back_1", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa", "middle"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa_middle",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_middle"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_side", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side"),
-            "seat_back_1", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_middle").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_side", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side").toString(),
+            "seat_back_1", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa", "outer"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa_outer",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_corner"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_side", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side"),
-            "seat_back_1", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1"),
-            "seat_back_2", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_2"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_corner").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_side", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side").toString(),
+            "seat_back_1", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1").toString(),
+            "seat_back_2", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_2").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa", "right"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/sofa_right",
-            "seat_top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_edge"),
-            "seat_front", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front"),
-            "seat_side", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side"),
-            "seat_back_1", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1"),
-            "back", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back")));
+            "seat_top", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_edge").toString(),
+            "seat_front", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_front").toString(),
+            "seat_side", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_side").toString(),
+            "seat_back_1", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "seat_back_1").toString(),
+            "back", DyeCommon.getModdedBlockModelID("another_furniture", color, "sofa", "back").toString()));
         blockStateModelGenerator.registerParentedItemModel(AnotherFurniture.SOFAS.get(color), DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "sofa"));
         
         // tall stools
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(AnotherFurniture.TALL_STOOLS.get(color), BlockStateVariant.create().put(VariantSettings.MODEL, DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "tall_stool"))));
         blockStateModelGenerator.modelCollector.accept(DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "tall_stool"), DyeCommon.parentWithTexturesModel(
             "another_furniture:block/template/tall_stool",
-            "top", "dyelation:"+DyeCommon.getModdedBlockModelID("another_furniture", color, "tall_stool", "top")));
+            "top", DyeCommon.getModdedBlockModelID("another_furniture", color, "tall_stool", "top").toString()));
         blockStateModelGenerator.registerParentedItemModel(AnotherFurniture.TALL_STOOLS.get(color), DyeCommon.getModdedBlockModelID(AnotherFurniture.MOD_NAME, color, "tall_stool"));
     }
 
@@ -381,6 +383,14 @@ public class AnotherFurnitureDatagen {
 			"all", "dyelation:block/another_furniture/curtain/"+color.asString()));
     }
 
-    // lang gen here
+    public static void langEnglish(TranslationBuilder builder, Color color) {
+        builder.add(AnotherFurniture.STOOLS.get(color), StringUtil.capitalize(color.asString())+" Stool");
+        builder.add(AnotherFurniture.CURTAINS.get(color), StringUtil.capitalize(color.asString())+" Curtain");
+        builder.add(AnotherFurniture.LAMPS.get(color), StringUtil.capitalize(color.asString())+" Lamp");
+        builder.add(AnotherFurniture.LAMP_CONNECTORS.get(color), StringUtil.capitalize(color.asString())+" Lamp");
+        builder.add(AnotherFurniture.SOFAS.get(color), StringUtil.capitalize(color.asString())+" Sofa");
+        builder.add(AnotherFurniture.TALL_STOOLS.get(color), StringUtil.capitalize(color.asString())+" Tall Stool");
+        // StringUtil.capitalize(color.asString())
+    }
 
 }

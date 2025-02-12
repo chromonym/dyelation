@@ -1,10 +1,10 @@
 {
   "parent": "another_furniture:block/template/sofa_left",
   "textures": {
-    "back": "dyelation:dyelation:block/another_furniture/sofa/forest_back",
-    "seat_back_1": "dyelation:dyelation:block/another_furniture/sofa/forest_seat_back_1",
-    "seat_front": "dyelation:dyelation:block/another_furniture/sofa/forest_seat_front",
-    "seat_side": "dyelation:dyelation:block/another_furniture/sofa/forest_seat_side",
-    "seat_top": "dyelation:dyelation:block/another_furniture/sofa/forest_seat_edge"
+    "back": "dyelation:block/another_furniture/sofa/forest_back",
+    "seat_back_1": "dyelation:block/another_furniture/sofa/forest_seat_back_1",
+    "seat_front": "dyelation:block/another_furniture/sofa/forest_seat_front",
+    "seat_side": "dyelation:block/another_furniture/sofa/forest_seat_side",
+    "seat_top": "dyelation:block/another_furniture/sofa/forest_seat_edge"
   }
 }

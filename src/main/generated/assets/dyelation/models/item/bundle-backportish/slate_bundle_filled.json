@@ -1,0 +1,6 @@
+{
+  "parent": "dyelation:item/bundle-backportish/slate_bundle",
+  "textures": {
+    "layer0": "dyelation:item/bundle-backportish/bundle/slate_filled"
+  }
+}

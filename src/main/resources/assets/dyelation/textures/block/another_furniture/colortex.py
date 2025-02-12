@@ -5,18 +5,14 @@ colorNames = ["maroon", "rose", "coral", "indigo", "navy", "slate",
           "olive", "amber", "beige", "teal", "mint", "aqua",
           "verdant", "forest", "ginger", "tan"]
 
-whiteMap = {
-    (255, 255, 255, 255): 0,
-    (239, 239, 239, 255): 1,
-    (224, 229, 229, 255): 2,
-    (199, 211, 211, 255): 3,
-    (194, 194, 194, 255): 4,
-    (168, 176, 177, 255): 5
-}
+whiteMap = {}
 colorMap = []
 
 colorIm = Image.open("./colormap.png", mode="r")
 width, height = colorIm.size
+
+for w in range(width):
+    whiteMap[colorIm.getpixel(w,0)] = w
 
 for h in range(16):
     thisColor = []

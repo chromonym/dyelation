@@ -110,5 +110,21 @@
   "block.dyelation.another_furniture.verdant_lamp_connector": "Verdant Lamp",
   "block.dyelation.another_furniture.verdant_sofa": "Verdant Sofa",
   "block.dyelation.another_furniture.verdant_stool": "Verdant Stool",
-  "block.dyelation.another_furniture.verdant_tall_stool": "Verdant Tall Stool"
+  "block.dyelation.another_furniture.verdant_tall_stool": "Verdant Tall Stool",
+  "item.dyelation.bundle-backportish.amber_bundle": "Amber Bundle",
+  "item.dyelation.bundle-backportish.aqua_bundle": "Aqua Bundle",
+  "item.dyelation.bundle-backportish.beige_bundle": "Beige Bundle",
+  "item.dyelation.bundle-backportish.coral_bundle": "Coral Bundle",
+  "item.dyelation.bundle-backportish.forest_bundle": "Forest Bundle",
+  "item.dyelation.bundle-backportish.ginger_bundle": "Ginger Bundle",
+  "item.dyelation.bundle-backportish.indigo_bundle": "Indigo Bundle",
+  "item.dyelation.bundle-backportish.maroon_bundle": "Maroon Bundle",
+  "item.dyelation.bundle-backportish.mint_bundle": "Mint Bundle",
+  "item.dyelation.bundle-backportish.navy_bundle": "Navy Bundle",
+  "item.dyelation.bundle-backportish.olive_bundle": "Olive Bundle",
+  "item.dyelation.bundle-backportish.rose_bundle": "Rose Bundle",
+  "item.dyelation.bundle-backportish.slate_bundle": "Slate Bundle",
+  "item.dyelation.bundle-backportish.tan_bundle": "Tan Bundle",
+  "item.dyelation.bundle-backportish.teal_bundle": "Teal Bundle",
+  "item.dyelation.bundle-backportish.verdant_bundle": "Verdant Bundle"
 }

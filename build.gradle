@@ -68,6 +68,10 @@ dependencies {
 	modCompileOnly("maven.modrinth:another-furniture:${project.another_furniture_version}")
 	modLocalRuntime("maven.modrinth:another-furniture:${project.another_furniture_version}")
 
+	// Bundle Backportish - optional mod (bundles)
+	modCompileOnly("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
+	modLocalRuntime("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
+
 	// add more mods here
 
 	// EMI - recipe viewer for testing purposes

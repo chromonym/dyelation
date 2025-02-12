@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "dyelation:item/bundle-backportish/olive_bundle_filled",
+      "predicate": {
+        "bundle-backportish:filled": 1.0E-7
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "dyelation:item/bundle-backportish/bundle/olive"
+  }
+}

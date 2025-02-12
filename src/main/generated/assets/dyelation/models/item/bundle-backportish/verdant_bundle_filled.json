@@ -1,0 +1,6 @@
+{
+  "parent": "dyelation:item/bundle-backportish/verdant_bundle",
+  "textures": {
+    "layer0": "dyelation:item/bundle-backportish/bundle/verdant_filled"
+  }
+}

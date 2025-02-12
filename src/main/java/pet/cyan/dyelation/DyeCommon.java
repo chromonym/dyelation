@@ -24,9 +24,14 @@ public class DyeCommon {
         Identifier id = new Identifier(Dyelation.MOD_ID, name);
         if (shouldRegisterItem) {
             BlockItem item = new BlockItem(block, new Item.Settings());
-            Registry.register(Registries.ITEM, id, item);
+            registerItem(item, name);
         }
         return Registry.register(Registries.BLOCK, id, block);
+    }
+
+    public static <I extends Item> I registerItem(I item, String name) {
+        Identifier id = new Identifier(Dyelation.MOD_ID, name);
+        return Registry.register(Registries.ITEM, id, item);
     }
 
     public static void doSomethingForAllColors(Consumer<Color> colorConsumer) {

@@ -1,0 +1,6 @@
+{
+  "parent": "dyelation:item/bundle-backportish/forest_bundle",
+  "textures": {
+    "layer0": "dyelation:item/bundle-backportish/bundle/forest_filled"
+  }
+}

@@ -24,6 +24,8 @@ public class ConfigPlugin implements IMixinConfigPlugin {
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (mixinClassName.contains("pet.cyan.dyelation.mixin.another_furniture")) {
             return FabricLoader.getInstance().isModLoaded("another_furniture");
+        } else if (mixinClassName.contains("pet.cyan.dyelation.mixin.bundlebackportish")) {
+            return FabricLoader.getInstance().isModLoaded("bundle-backportish");
         } else {
             return true;
         }

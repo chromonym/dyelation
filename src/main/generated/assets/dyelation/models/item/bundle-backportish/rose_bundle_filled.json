@@ -1,0 +1,6 @@
+{
+  "parent": "dyelation:item/bundle-backportish/rose_bundle",
+  "textures": {
+    "layer0": "dyelation:item/bundle-backportish/bundle/rose_filled"
+  }
+}

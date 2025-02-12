@@ -2,7 +2,7 @@ package pet.cyan.dyelation;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
-import pet.cyan.dyelation.interop.AnotherFurniture;
+import pet.cyan.dyelation.interop.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +24,10 @@ public class Dyelation implements ModInitializer {
 		if (fl.isModLoaded("another_furniture")) {
 			LOGGER.info("Another Furniture loaded, running common setup");
 			AnotherFurniture.initialize();
+		}
+		if (fl.isModLoaded("bundle-backportish")) {
+			LOGGER.info("Bundle Backport-ish loaded, running setup");
+			BundleBackportish.initialize();
 		}
 	}
 }

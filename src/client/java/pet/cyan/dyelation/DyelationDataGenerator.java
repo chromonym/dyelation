@@ -24,6 +24,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import pet.cyan.dyelation.datagen.AnotherFurnitureDatagen;
+import pet.cyan.dyelation.datagen.BundleBackportishDatagen;
 import pet.cyan.dyelation.interop.AnotherFurniture;
 
 public class DyelationDataGenerator implements DataGeneratorEntrypoint {
@@ -114,6 +115,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.itemModels(itemModelGenerator, color);
+				BundleBackportishDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -128,6 +130,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		public void generateTranslations(TranslationBuilder translationBuilder) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.langEnglish(translationBuilder, color);
+				BundleBackportishDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

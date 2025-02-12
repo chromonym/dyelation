@@ -6,7 +6,9 @@
 	"mixins": [
 		"ExampleMixin",
 		"another_furniture.LampBlockMixin",
-		"another_furniture.LampConnectorBlockMixin"
+		"another_furniture.LampConnectorBlockMixin",
+		"bundlebackportish.CreativeInventoryMixin",
+		"bundlebackportish.BundleColoringRecipeMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=east,type=inner_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 90
+    },
+    "facing=east,type=inner_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 180
+    },
+    "facing=east,type=left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_left",
+      "y": 90
+    },
+    "facing=east,type=middle": {
+      "model": "dyelation:block/another_furniture/sofa/amber_middle",
+      "y": 90
+    },
+    "facing=east,type=outer_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 90
+    },
+    "facing=east,type=outer_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 180
+    },
+    "facing=east,type=right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_right",
+      "y": 90
+    },
+    "facing=east,type=single": {
+      "model": "dyelation:block/another_furniture/sofa/amber",
+      "y": 90
+    },
+    "facing=north,type=inner_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner"
+    },
+    "facing=north,type=inner_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 90
+    },
+    "facing=north,type=left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_left"
+    },
+    "facing=north,type=middle": {
+      "model": "dyelation:block/another_furniture/sofa/amber_middle"
+    },
+    "facing=north,type=outer_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer"
+    },
+    "facing=north,type=outer_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 90
+    },
+    "facing=north,type=right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_right"
+    },
+    "facing=north,type=single": {
+      "model": "dyelation:block/another_furniture/sofa/amber"
+    },
+    "facing=south,type=inner_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 180
+    },
+    "facing=south,type=inner_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 270
+    },
+    "facing=south,type=left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_left",
+      "y": 180
+    },
+    "facing=south,type=middle": {
+      "model": "dyelation:block/another_furniture/sofa/amber_middle",
+      "y": 180
+    },
+    "facing=south,type=outer_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 180
+    },
+    "facing=south,type=outer_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 270
+    },
+    "facing=south,type=right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_right",
+      "y": 180
+    },
+    "facing=south,type=single": {
+      "model": "dyelation:block/another_furniture/sofa/amber",
+      "y": 180
+    },
+    "facing=west,type=inner_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner",
+      "y": 270
+    },
+    "facing=west,type=inner_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_inner"
+    },
+    "facing=west,type=left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_left",
+      "y": 270
+    },
+    "facing=west,type=middle": {
+      "model": "dyelation:block/another_furniture/sofa/amber_middle",
+      "y": 270
+    },
+    "facing=west,type=outer_left": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer",
+      "y": 270
+    },
+    "facing=west,type=outer_right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_outer"
+    },
+    "facing=west,type=right": {
+      "model": "dyelation:block/another_furniture/sofa/amber_right",
+      "y": 270
+    },
+    "facing=west,type=single": {
+      "model": "dyelation:block/another_furniture/sofa/amber",
+      "y": 270
+    }
+  }
+}

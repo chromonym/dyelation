@@ -2,6 +2,10 @@ package pet.cyan.dyelation;
 
 import java.util.EnumMap;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
+
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
@@ -56,6 +60,10 @@ public class DyeCommon {
         return new Identifier(Dyelation.MOD_ID, "block/"+ modId + "/"+ itemName + "/" + color.dye.getName());
     }
 
+    public static Identifier getModdedItemModelID(String modId, Color color, String itemName) {
+        return new Identifier(Dyelation.MOD_ID, "item/"+getModdedItemName(modId, color, itemName));
+    }
+
     public static <I extends ItemConvertible> void addInbetweenItemGroup(RegistryKey<ItemGroup> itemGroup, EnumMap<Color, I> items, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
         // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
         ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> {
@@ -89,5 +97,16 @@ public class DyeCommon {
         // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in internal ID order (white, orange, magenta, light blue, etc)
         addAfterInItemGroup(RegistryKey.of(RegistryKeys.ITEM_GROUP, igName), items, blackItem);
     }
+
+    public static Supplier<JsonElement> parentWithTexturesModel(String parent, String... textureNames) {
+		JsonObject modelFile = new JsonObject();
+		modelFile.addProperty("parent", parent);
+		JsonObject textures = new JsonObject();
+		for (var i = 0; i<textureNames.length; i+=2) {
+			textures.addProperty(textureNames[i], textureNames[i+1]);
+		}
+		modelFile.add("textures", textures);
+		return () -> modelFile;
+	}
 
 }

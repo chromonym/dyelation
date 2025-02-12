@@ -1,20 +1,10 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/coral"
-      },
-      "when": {
-        "low": "false"
-      }
+  "variants": {
+    "low=false": {
+      "model": "dyelation:block/another_furniture/stool/coral"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/coral_low"
-      },
-      "when": {
-        "low": "true"
-      }
+    "low=true": {
+      "model": "dyelation:block/another_furniture/stool/coral_low"
     }
-  ]
+  }
 }

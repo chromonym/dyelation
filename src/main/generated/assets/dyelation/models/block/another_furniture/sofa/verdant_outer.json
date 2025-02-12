@@ -1,0 +1,11 @@
+{
+  "parent": "another_furniture:block/template/sofa_outer",
+  "textures": {
+    "back": "dyelation:dyelation:block/another_furniture/sofa/verdant_back",
+    "seat_back_1": "dyelation:dyelation:block/another_furniture/sofa/verdant_seat_back_1",
+    "seat_back_2": "dyelation:dyelation:block/another_furniture/sofa/verdant_seat_back_2",
+    "seat_front": "dyelation:dyelation:block/another_furniture/sofa/verdant_seat_front",
+    "seat_side": "dyelation:dyelation:block/another_furniture/sofa/verdant_seat_side",
+    "seat_top": "dyelation:dyelation:block/another_furniture/sofa/verdant_seat_corner"
+  }
+}

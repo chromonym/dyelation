@@ -1,20 +1,10 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/amber"
-      },
-      "when": {
-        "low": "false"
-      }
+  "variants": {
+    "low=false": {
+      "model": "dyelation:block/another_furniture/stool/amber"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/amber_low"
-      },
-      "when": {
-        "low": "true"
-      }
+    "low=true": {
+      "model": "dyelation:block/another_furniture/stool/amber_low"
     }
-  ]
+  }
 }

@@ -1,20 +1,10 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/slate"
-      },
-      "when": {
-        "low": "false"
-      }
+  "variants": {
+    "low=false": {
+      "model": "dyelation:block/another_furniture/stool/slate"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/slate_low"
-      },
-      "when": {
-        "low": "true"
-      }
+    "low=true": {
+      "model": "dyelation:block/another_furniture/stool/slate_low"
     }
-  ]
+  }
 }

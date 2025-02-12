@@ -1,20 +1,10 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/forest"
-      },
-      "when": {
-        "low": "false"
-      }
+  "variants": {
+    "low=false": {
+      "model": "dyelation:block/another_furniture/stool/forest"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/forest_low"
-      },
-      "when": {
-        "low": "true"
-      }
+    "low=true": {
+      "model": "dyelation:block/another_furniture/stool/forest_low"
     }
-  ]
+  }
 }

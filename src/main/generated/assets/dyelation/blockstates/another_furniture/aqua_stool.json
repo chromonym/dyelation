@@ -1,20 +1,10 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/aqua"
-      },
-      "when": {
-        "low": "false"
-      }
+  "variants": {
+    "low=false": {
+      "model": "dyelation:block/another_furniture/stool/aqua"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/stool/aqua_low"
-      },
-      "when": {
-        "low": "true"
-      }
+    "low=true": {
+      "model": "dyelation:block/another_furniture/stool/aqua_low"
     }
-  ]
+  }
 }

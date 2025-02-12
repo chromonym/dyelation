@@ -1,0 +1,76 @@
+{
+  "variants": {
+    "base=false,facing=east,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 90
+    },
+    "base=false,facing=east,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 90
+    },
+    "base=false,facing=north,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off"
+    },
+    "base=false,facing=north,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall"
+    },
+    "base=false,facing=south,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 180
+    },
+    "base=false,facing=south,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 180
+    },
+    "base=false,facing=up,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_tall_top_off"
+    },
+    "base=false,facing=up,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_tall_top"
+    },
+    "base=false,facing=west,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 270
+    },
+    "base=false,facing=west,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 270
+    },
+    "base=true,facing=east,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 90
+    },
+    "base=true,facing=east,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 90
+    },
+    "base=true,facing=north,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off"
+    },
+    "base=true,facing=north,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall"
+    },
+    "base=true,facing=south,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 180
+    },
+    "base=true,facing=south,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 180
+    },
+    "base=true,facing=up,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_off"
+    },
+    "base=true,facing=up,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber"
+    },
+    "base=true,facing=west,lit=false": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall_off",
+      "y": 270
+    },
+    "base=true,facing=west,lit=true": {
+      "model": "dyelation:block/another_furniture/lamp/amber_wall",
+      "y": 270
+    }
+  }
+}

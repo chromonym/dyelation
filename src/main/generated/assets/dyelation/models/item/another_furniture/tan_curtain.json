@@ -1,3 +1,6 @@
 {
-  "parent": "dyelation:block/another_furniture/tan_curtain"
+  "parent": "another_furniture:item/template/curtain",
+  "textures": {
+    "all": "dyelation:block/another_furniture/curtain/tan"
+  }
 }

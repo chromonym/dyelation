@@ -1,392 +1,238 @@
 {
-  "multipart": [
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "single",
-        "open": "true",
-        "vertical": "up"
-      }
+  "variants": {
+    "facing=east,horizontal=left,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_top"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=left,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_bottom"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=left,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_top"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=left,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_bottom"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=middle,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle"
-      },
-      "when": {
-        "facing": "north",
-        "horizontal": "middle",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=middle,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_top"
-      },
-      "when": {
-        "facing": "north",
-        "open": "false",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom"
-      },
-      "when": {
-        "facing": "north",
-        "open": "false",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=middle,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "single",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=right,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_top",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=right,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=right,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_top",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=right,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=single,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "horizontal": "middle",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=single,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "open": "false",
-        "vertical": "up"
-      }
+    "facing=east,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
-        "y": 90
-      },
-      "when": {
-        "facing": "east",
-        "open": "false",
-        "vertical": "down"
-      }
+    "facing=east,horizontal=single,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 90
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "single",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=left,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_top",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=left,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=left,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_top",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=left,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=middle,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "horizontal": "middle",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=middle,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "open": "false",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
-        "y": 180
-      },
-      "when": {
-        "facing": "south",
-        "open": "false",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=middle,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "single",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=right,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_top",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=right,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "left",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=right,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_top",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=right,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "right",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=single,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_middle",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "horizontal": "middle",
-        "open": "true",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=single,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "open": "false",
-        "vertical": "up"
-      }
+    "facing=north,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
     },
-    {
-      "apply": {
-        "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
-        "y": 270
-      },
-      "when": {
-        "facing": "west",
-        "open": "false",
-        "vertical": "down"
-      }
+    "facing=north,horizontal=single,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle"
     },
-    {
-      "apply": {
-        "model": "minecraft:block/air"
-      },
-      "when": {
-        "horizontal": "single",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=south,horizontal=left,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 180
     },
-    {
-      "apply": {
-        "model": "minecraft:block/air"
-      },
-      "when": {
-        "horizontal": "middle",
-        "open": "true",
-        "vertical": "down"
-      }
+    "facing=south,horizontal=left,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=left,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=left,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_top",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=south,horizontal=middle,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=right,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_top",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 180
+    },
+    "facing=south,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=south,horizontal=single,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 180
+    },
+    "facing=west,horizontal=left,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=left,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_left_top",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=middle,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=west,horizontal=middle,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=true,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=right,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_right_top",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=false,vertical=down": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_bottom",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=false,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_closed_top",
+      "y": 270
+    },
+    "facing=west,horizontal=single,open=true,vertical=down": {
+      "model": "minecraft:block/air"
+    },
+    "facing=west,horizontal=single,open=true,vertical=up": {
+      "model": "dyelation:block/another_furniture/curtain/slate_middle",
+      "y": 270
     }
-  ]
+  }
 }

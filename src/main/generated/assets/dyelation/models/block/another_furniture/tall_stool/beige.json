@@ -1,0 +1,6 @@
+{
+  "parent": "another_furniture:block/template/tall_stool",
+  "textures": {
+    "top": "dyelation:dyelation:block/another_furniture/tall_stool/beige_top"
+  }
+}

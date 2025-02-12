@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-11T15:27:06.28796	Dyelation/Block Loot Tables
+// 1.20.1	2025-02-12T13:52:26.4029639	Dyelation/Block Loot Tables
 c4ec40d5ec26b779dd13413079d89a012e402e85 data\dyelation\loot_tables\blocks\another_furniture\amber_curtain.json
 b639c467fb5409a72426c43fccf76248aa20edb4 data\dyelation\loot_tables\blocks\another_furniture\mint_sofa.json
 0914354b19369f7dc1c5ea0b302d71fda57995d7 data\dyelation\loot_tables\blocks\another_furniture\rose_lamp_connector.json
@@ -30,8 +30,8 @@ c4c26e160d37c22410148d83087d54999712f773 data\dyelation\loot_tables\blocks\anoth
 fc255ed3dfb487c555512f5bf8bcfda2c864a357 data\dyelation\loot_tables\blocks\another_furniture\navy_lamp.json
 60749000964f51ca03d33297935a44e395166c7f data\dyelation\loot_tables\blocks\another_furniture\mint_lamp_connector.json
 c8f25ebf6ebc825b35b93b2cff1366f6fa05522f data\dyelation\loot_tables\blocks\another_furniture\beige_lamp_connector.json
-6f63b6a7b3b5256df644796e74966c96013ba18e data\dyelation\loot_tables\blocks\another_furniture\rose_curtain.json
 e7268dc1c7c58ebcdafaead9630fc82e074e56d9 data\dyelation\loot_tables\blocks\another_furniture\aqua_tall_stool.json
+6f63b6a7b3b5256df644796e74966c96013ba18e data\dyelation\loot_tables\blocks\another_furniture\rose_curtain.json
 d3804f6bf5af48bfdb7a47e7094a47948d633516 data\dyelation\loot_tables\blocks\another_furniture\forest_lamp.json
 22e9e19b299a3c89a74846d994adfd5446a03dbb data\dyelation\loot_tables\blocks\another_furniture\maroon_sofa.json
 2b19bb8e7a05aafba50f5615e01b3dc58465b49a data\dyelation\loot_tables\blocks\another_furniture\coral_stool.json

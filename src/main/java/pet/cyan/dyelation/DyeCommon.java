@@ -103,6 +103,29 @@ public class DyeCommon {
         addAfterInItemGroup(RegistryKey.of(RegistryKeys.ITEM_GROUP, igName), items, blackItem);
     }
 
+    public static <I extends ItemConvertible, J extends ItemConvertible> void addInbetweenItemGroupDouble(RegistryKey<ItemGroup> itemGroup, EnumMap<Color, I> itemsA, EnumMap<Color, J> itemsB, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
+        // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
+        // AND THERE ARE TWO DIFFERENT TYPES OF ITEM (see: farmer's delight canvas signs)
+        // note the ItemConvertibles should be the SECOND item type
+        ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> {
+            content.addAfter(brown, itemsA.get(Color.MAROON), itemsB.get(Color.MAROON), itemsA.get(Color.ROSE), itemsB.get(Color.ROSE));
+            content.addAfter(red, itemsA.get(Color.CORAL), itemsB.get(Color.CORAL), itemsA.get(Color.GINGER), itemsB.get(Color.GINGER));
+            content.addAfter(orange, itemsA.get(Color.TAN), itemsB.get(Color.TAN), itemsA.get(Color.BEIGE), itemsB.get(Color.BEIGE));
+            content.addAfter(yellow, itemsA.get(Color.AMBER), itemsB.get(Color.AMBER), itemsA.get(Color.OLIVE), itemsB.get(Color.OLIVE));
+            content.addAfter(lime, itemsA.get(Color.FOREST), itemsB.get(Color.FOREST));
+            content.addAfter(green, itemsA.get(Color.VERDANT), itemsB.get(Color.VERDANT), itemsA.get(Color.TEAL), itemsB.get(Color.TEAL));
+            content.addAfter(cyan, itemsA.get(Color.MINT), itemsB.get(Color.MINT), itemsA.get(Color.AQUA), itemsB.get(Color.AQUA));
+            content.addAfter(blue, itemsA.get(Color.SLATE), itemsB.get(Color.SLATE), itemsA.get(Color.NAVY), itemsB.get(Color.NAVY), itemsA.get(Color.INDIGO), itemsB.get(Color.INDIGO));
+        });
+    }
+
+    public static <I extends ItemConvertible, J extends ItemConvertible> void addInbetweenItemGroupDouble(Identifier igName, EnumMap<Color, I> itemsA, EnumMap<Color, J> itemsB, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
+        // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
+        // AND THERE ARE TWO DIFFERENT TYPES OF ITEM (see: farmer's delight canvas signs)
+        // note the ItemConvertibles should be the SECOND item type
+        addInbetweenItemGroupDouble(RegistryKey.of(RegistryKeys.ITEM_GROUP, igName), itemsA, itemsB, brown, red, orange, yellow, lime, green, cyan, blue);
+    }
+
     public static Supplier<JsonElement> parentWithTexturesModel(String parent, String... textureNames) {
 		JsonObject modelFile = new JsonObject();
 		modelFile.addProperty("parent", parent);

@@ -9,6 +9,7 @@ import com.starfish_studios.another_furniture.block.SofaBlock;
 import com.starfish_studios.another_furniture.block.StoolBlock;
 import com.starfish_studios.another_furniture.block.properties.HorizontalConnectionType;
 import com.starfish_studios.another_furniture.block.properties.SofaType;
+import com.starfish_studios.another_furniture.registry.AFBlockTags;
 import com.starfish_studios.another_furniture.registry.AFBlocks;
 import com.starfish_studios.another_furniture.registry.AFItemTags;
 
@@ -33,6 +34,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.DyeCommon;
+import pet.cyan.dyelation.DyelationDataGenerator.DyeBlockTagGenerator;
+import pet.cyan.dyelation.DyelationDataGenerator.DyeItemTagGenerator;
 import pet.cyan.dyelation.interop.AnotherFurniture;
 
 public class AnotherFurnitureDatagen {
@@ -391,6 +394,22 @@ public class AnotherFurnitureDatagen {
         builder.add(AnotherFurniture.SOFAS.get(color), StringUtil.capitalize(color.asString())+" Sofa");
         builder.add(AnotherFurniture.TALL_STOOLS.get(color), StringUtil.capitalize(color.asString())+" Tall Stool");
         // StringUtil.capitalize(color.asString())
+    }
+
+    public static void blockTags(DyeBlockTagGenerator tagProvider, Color color) {
+        tagProvider.getOrCreateBlockTagBuilder(AFBlockTags.STOOLS).add(AnotherFurniture.STOOLS.get(color));
+		tagProvider.getOrCreateBlockTagBuilder(AFBlockTags.CURTAINS).add(AnotherFurniture.CURTAINS.get(color));
+		tagProvider.getOrCreateBlockTagBuilder(AFBlockTags.LAMPS).add(AnotherFurniture.LAMPS.get(color)).add(AnotherFurniture.LAMP_CONNECTORS.get(color));
+		tagProvider.getOrCreateBlockTagBuilder(AFBlockTags.SOFAS).add(AnotherFurniture.SOFAS.get(color));
+		tagProvider.getOrCreateBlockTagBuilder(AFBlockTags.TALL_STOOLS).add(AnotherFurniture.TALL_STOOLS.get(color));
+    }
+
+    public static void itemTags(DyeItemTagGenerator tagProvider, Color color) {
+        tagProvider.getOrCreateItemTagBuilder(AFItemTags.STOOLS).add(AnotherFurniture.STOOLS.get(color).asItem());
+		tagProvider.getOrCreateItemTagBuilder(AFItemTags.CURTAINS).add(AnotherFurniture.CURTAINS.get(color).asItem());
+		tagProvider.getOrCreateItemTagBuilder(AFItemTags.LAMPS).add(AnotherFurniture.LAMPS.get(color).asItem());
+		tagProvider.getOrCreateItemTagBuilder(AFItemTags.SOFAS).add(AnotherFurniture.SOFAS.get(color).asItem());
+		tagProvider.getOrCreateItemTagBuilder(AFItemTags.TALL_STOOLS).add(AnotherFurniture.TALL_STOOLS.get(color).asItem());
     }
 
 }

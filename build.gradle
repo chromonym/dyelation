@@ -27,10 +27,20 @@ repositories {
 	maven {
         url = "https://maven.modmuss50.me/"
     }
-	maven { url = "https://mvn.devos.one/snapshots/" }
 	maven {
 		name = "TerraformersMC"
 		url = "https://maven.terraformersmc.com/"
+	}
+	maven {
+		name = "Greenhouse Maven"
+		url = 'https://maven.greenhouseteam.dev/releases/'
+	}
+	maven { url = "https://mvn.devos.one/releases/" } // Porting Lib
+	maven {
+		url "https://maven.jamieswhiteshirt.com/libs-release" // Reach Entity Attributes (Required by Porting Lib)
+		content {
+			includeGroup "com.jamieswhiteshirt"
+		}
 	}
 }
 
@@ -49,6 +59,7 @@ loom {
 fabricApi {
 	configureDataGeneration {
 		client = true
+		modId = "dyelation"
 	}
 }
 
@@ -71,6 +82,12 @@ dependencies {
 	// Bundle Backportish - optional mod (bundles)
 	modCompileOnly("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
 	modLocalRuntime("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
+
+	// Desire here (if permission granted)
+
+	// Farmer's Delight (Refabricated)
+	modCompileOnly("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
+	modLocalRuntime("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
 
 	// add more mods here
 

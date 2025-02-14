@@ -18,7 +18,5 @@ public class ModDatagen {
     public static void itemModels(ItemModelGenerator itemModelGenerator, Color color) {}
     public static void langEnglish(TranslationBuilder builder, Color color) {}
     public static void blockTags(DyeBlockTagGenerator tagProvider, Color color) {}
-    public static void itemTags(DyelationDataGenerator.DyeBlockTagGenerator tagProvider, Color color) {
-        
-    }
+    public static void itemTags(DyelationDataGenerator.DyeBlockTagGenerator tagProvider, Color color) {}
 }

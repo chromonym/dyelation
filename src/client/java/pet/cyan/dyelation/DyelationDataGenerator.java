@@ -44,6 +44,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.recipes(exporter, color);
 				FarmersDelightDatagen.recipes(exporter, color);
+				ItemsDisplayedDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -114,6 +115,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AnotherFurnitureDatagen.itemModels(itemModelGenerator, color);
 				BundleBackportishDatagen.itemModels(itemModelGenerator, color);
 				FarmersDelightDatagen.itemModels(itemModelGenerator, color);
+				ItemsDisplayedDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -130,6 +132,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AnotherFurnitureDatagen.langEnglish(translationBuilder, color);
 				BundleBackportishDatagen.langEnglish(translationBuilder, color);
 				FarmersDelightDatagen.langEnglish(translationBuilder, color);
+				ItemsDisplayedDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

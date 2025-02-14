@@ -158,5 +158,21 @@
   "item.dyelation.bundle-backportish.slate_bundle": "Slate Bundle",
   "item.dyelation.bundle-backportish.tan_bundle": "Tan Bundle",
   "item.dyelation.bundle-backportish.teal_bundle": "Teal Bundle",
-  "item.dyelation.bundle-backportish.verdant_bundle": "Verdant Bundle"
+  "item.dyelation.bundle-backportish.verdant_bundle": "Verdant Bundle",
+  "item.dyelation.items_displayed.amber_jewelry_pillow": "Amber Jewelry Pillow",
+  "item.dyelation.items_displayed.aqua_jewelry_pillow": "Aqua Jewelry Pillow",
+  "item.dyelation.items_displayed.beige_jewelry_pillow": "Beige Jewelry Pillow",
+  "item.dyelation.items_displayed.coral_jewelry_pillow": "Coral Jewelry Pillow",
+  "item.dyelation.items_displayed.forest_jewelry_pillow": "Forest Jewelry Pillow",
+  "item.dyelation.items_displayed.ginger_jewelry_pillow": "Ginger Jewelry Pillow",
+  "item.dyelation.items_displayed.indigo_jewelry_pillow": "Indigo Jewelry Pillow",
+  "item.dyelation.items_displayed.maroon_jewelry_pillow": "Maroon Jewelry Pillow",
+  "item.dyelation.items_displayed.mint_jewelry_pillow": "Mint Jewelry Pillow",
+  "item.dyelation.items_displayed.navy_jewelry_pillow": "Navy Jewelry Pillow",
+  "item.dyelation.items_displayed.olive_jewelry_pillow": "Olive Jewelry Pillow",
+  "item.dyelation.items_displayed.rose_jewelry_pillow": "Rose Jewelry Pillow",
+  "item.dyelation.items_displayed.slate_jewelry_pillow": "Slate Jewelry Pillow",
+  "item.dyelation.items_displayed.tan_jewelry_pillow": "Tan Jewelry Pillow",
+  "item.dyelation.items_displayed.teal_jewelry_pillow": "Teal Jewelry Pillow",
+  "item.dyelation.items_displayed.verdant_jewelry_pillow": "Verdant Jewelry Pillow"
 }

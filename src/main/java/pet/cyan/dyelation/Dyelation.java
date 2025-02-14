@@ -33,5 +33,9 @@ public class Dyelation implements ModInitializer {
 			LOGGER.info("Farmer's Delight loaded, running setup");
 			FarmersDelight.initialize();
 		}
+		if (fl.isModLoaded("items_displayed")) {
+			LOGGER.info("Items Displayed loaded, running setup");
+			ItemsDisplayed.initialize();
+		}
 	}
 }

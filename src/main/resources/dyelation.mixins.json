@@ -10,7 +10,8 @@
 		"bundlebackportish.CreativeInventoryMixin",
 		"bundlebackportish.BundleColoringRecipeMixin",
 		"farmersdelight.AddCanvasSignsMixin",
-		"farmersdelight.DarkBackgroundSignsMixin"
+		"farmersdelight.DarkBackgroundSignsMixin",
+		"items_displayed.JewelryPillowEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

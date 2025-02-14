@@ -92,9 +92,13 @@ dependencies {
 
 	// Desire here (if permission granted)
 
-	// Farmer's Delight (Refabricated)
+	// Farmer's Delight (Refabricated) - optional mod (canvas signs)
 	modCompileOnly("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
 	modLocalRuntime("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
+
+	// Items Displayed [Fabric] - optional mod (jewelry pillows)
+	modCompileOnly("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
+	modLocalRuntime("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
 
 	// add more mods here
 

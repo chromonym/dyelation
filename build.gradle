@@ -42,6 +42,10 @@ repositories {
 			includeGroup "com.jamieswhiteshirt"
 		}
 	}
+	maven {
+		name = "FzzyMaven"
+		url = "https://maven.fzzyhmstrs.me/"
+	}
 }
 
 loom {
@@ -75,6 +79,9 @@ dependencies {
 	// Dye Depot - the mod this one is an addon for
 	modImplementation "maven.modrinth:dye-depot:${project.dye_depot_version}-fabric"
 
+	// Fzzy Config - used for the. config.
+	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}+${project.minecraft_version}"
+
 	// Another Furniture - optional mod (stools, curtains, lamps, sofas, tall stools)
 	modCompileOnly("maven.modrinth:another-furniture:${project.another_furniture_version}")
 	modLocalRuntime("maven.modrinth:another-furniture:${project.another_furniture_version}")
@@ -95,6 +102,8 @@ dependencies {
 	modLocalRuntime("dev.emi:emi-fabric:${project.emi_version}+${project.minecraft_version}")
 	// Jade - block info mod for testing purposes
 	modLocalRuntime("maven.modrinth:jade:${project.jade_version}+fabric")
+	// Mod Menu - mod list for testing purposes
+	modLocalRuntime("com.terraformersmc:modmenu:${project.modmenu_version}")
 
 	/*
 	// dependencies of the below mods

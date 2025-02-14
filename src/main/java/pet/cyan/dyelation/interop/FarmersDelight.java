@@ -2,6 +2,8 @@ package pet.cyan.dyelation.interop;
 
 import java.util.EnumMap;
 
+import me.fzzyhmstrs.fzzy_config.api.ConfigApiJava;
+import me.fzzyhmstrs.fzzy_config.api.RegisterType;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
@@ -11,6 +13,7 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.DyeCommon;
+import pet.cyan.dyelation.configs.FarmersDelightConfig;
 import vectorwing.farmersdelight.common.block.CeilingHangingCanvasSignBlock;
 import vectorwing.farmersdelight.common.block.StandingCanvasSignBlock;
 import vectorwing.farmersdelight.common.block.WallCanvasSignBlock;
@@ -21,6 +24,8 @@ public class FarmersDelight {
 
     public static String MOD_NAME = "farmersdelight";
 
+    public static FarmersDelightConfig config = ConfigApiJava.registerAndLoadConfig(FarmersDelightConfig::new, RegisterType.SERVER);
+
     public static EnumMap<Color, StandingCanvasSignBlock> CANVAS_SIGNS = new EnumMap<>(Color.class);
     public static EnumMap<Color, WallCanvasSignBlock> WALL_CANVAS_SIGNS = new EnumMap<>(Color.class);
     public static EnumMap<Color, SignItem> CANVAS_SIGN_ITEMS = new EnumMap<>(Color.class);
@@ -29,6 +34,10 @@ public class FarmersDelight {
     public static EnumMap<Color, HangingSignItem> HANGING_CANVAS_SIGN_ITEMS = new EnumMap<>(Color.class);
 
     public static void initialize() {
+        DyeCommon.addInbetweenItemGroupDouble(Identifier.of(MOD_NAME, MOD_NAME), CANVAS_SIGN_ITEMS, HANGING_CANVAS_SIGN_ITEMS, ModItems.BROWN_HANGING_CANVAS_SIGN.get(), ModItems.RED_HANGING_CANVAS_SIGN.get(), ModItems.ORANGE_HANGING_CANVAS_SIGN.get(), ModItems.YELLOW_HANGING_CANVAS_SIGN.get(), ModItems.LIME_HANGING_CANVAS_SIGN.get(), ModItems.GREEN_HANGING_CANVAS_SIGN.get(), ModItems.CYAN_HANGING_CANVAS_SIGN.get(), ModItems.BLUE_HANGING_CANVAS_SIGN.get());
+    }
+
+    static {
         DyeCommon.doSomethingForAllColors(color -> {
             // regular canvas signs
             StandingCanvasSignBlock signBlock = DyeCommon.registerBlock(new StandingCanvasSignBlock(DyeColor.byId(color.dye.getId())), DyeCommon.getModdedItemName(MOD_NAME, color, "canvas_sign"), false);
@@ -45,6 +54,5 @@ public class FarmersDelight {
             HangingSignItem hangingSignItem = DyeCommon.registerItem(new HangingSignItem(ceilingHangingBlock, wallHangingBlock, new FabricItemSettings()), DyeCommon.getModdedItemName(MOD_NAME, color, "hanging_canvas_sign"));
             HANGING_CANVAS_SIGN_ITEMS.put(color, hangingSignItem);
         });
-        DyeCommon.addInbetweenItemGroupDouble(Identifier.of(MOD_NAME, MOD_NAME), CANVAS_SIGN_ITEMS, HANGING_CANVAS_SIGN_ITEMS, ModItems.BROWN_HANGING_CANVAS_SIGN.get(), ModItems.RED_HANGING_CANVAS_SIGN.get(), ModItems.ORANGE_HANGING_CANVAS_SIGN.get(), ModItems.YELLOW_HANGING_CANVAS_SIGN.get(), ModItems.LIME_HANGING_CANVAS_SIGN.get(), ModItems.GREEN_HANGING_CANVAS_SIGN.get(), ModItems.CYAN_HANGING_CANVAS_SIGN.get(), ModItems.BLUE_HANGING_CANVAS_SIGN.get());
     }
 }

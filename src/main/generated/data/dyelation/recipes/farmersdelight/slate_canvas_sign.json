@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "fd_canvas_sign",
+  "ingredients": [
+    {
+      "tag": "farmersdelight:canvas_signs"
+    },
+    {
+      "item": "dye_depot:slate_dye"
+    }
+  ],
+  "result": {
+    "item": "dyelation:farmersdelight/slate_canvas_sign"
+  }
+}

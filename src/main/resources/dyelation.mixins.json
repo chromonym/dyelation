@@ -8,7 +8,9 @@
 		"another_furniture.LampBlockMixin",
 		"another_furniture.LampConnectorBlockMixin",
 		"bundlebackportish.CreativeInventoryMixin",
-		"bundlebackportish.BundleColoringRecipeMixin"
+		"bundlebackportish.BundleColoringRecipeMixin",
+		"farmersdelight.AddCanvasSignsMixin",
+		"farmersdelight.DarkBackgroundSignsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

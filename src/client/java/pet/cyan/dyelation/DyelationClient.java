@@ -9,7 +9,7 @@ public class DyelationClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.\
 		FabricLoader fl = FabricLoader.getInstance();
-		if (fl.isModLoaded("another_furniture")) {
+		if (fl.isModLoaded("another_furniture") && !fl.isModLoaded("patchup")) { // another furniture already supported by patch up
 			Dyelation.LOGGER.info("Another Furniture loaded, running client setup");
 			AnotherFurnitureRenderer.initialize();
 		}

@@ -45,6 +45,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AnotherFurnitureDatagen.recipes(exporter, color);
 				FarmersDelightDatagen.recipes(exporter, color);
 				ItemsDisplayedDatagen.recipes(exporter, color);
+				SpelunkeryDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -58,6 +59,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.blockLootTables(this, color);
 				FarmersDelightDatagen.blockLootTables(this, color);
+				SpelunkeryDatagen.blockLootTables(this, color);
 			});
 		}
 	}
@@ -71,6 +73,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.itemTags(this, color);
 				FarmersDelightDatagen.itemTags(this, color);
+				SpelunkeryDatagen.itemTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateItemTagBuilder(TagKey<Item> tagKey) {
@@ -102,9 +105,9 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		@Override
 		public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 			DyeCommon.doSomethingForAllColors(color -> {
-				// ANOTHER FURNITURE
 				AnotherFurnitureDatagen.blockModels(blockStateModelGenerator, color);
 				FarmersDelightDatagen.blockModels(blockStateModelGenerator, color);
+				SpelunkeryDatagen.blockModels(blockStateModelGenerator, color);
 			});
 
 		}
@@ -116,6 +119,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				BundleBackportishDatagen.itemModels(itemModelGenerator, color);
 				FarmersDelightDatagen.itemModels(itemModelGenerator, color);
 				ItemsDisplayedDatagen.itemModels(itemModelGenerator, color);
+				SpelunkeryDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -133,6 +137,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				BundleBackportishDatagen.langEnglish(translationBuilder, color);
 				FarmersDelightDatagen.langEnglish(translationBuilder, color);
 				ItemsDisplayedDatagen.langEnglish(translationBuilder, color);
+				SpelunkeryDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

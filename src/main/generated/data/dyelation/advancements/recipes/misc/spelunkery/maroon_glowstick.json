@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_glowstick": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "spelunkery:glowstick"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dyelation:spelunkery/maroon_glowstick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_glowstick",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dyelation:spelunkery/maroon_glowstick"
+    ]
+  },
+  "sends_telemetry_event": false
+}

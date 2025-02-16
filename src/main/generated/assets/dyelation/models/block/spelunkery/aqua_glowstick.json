@@ -1,0 +1,7 @@
+{
+  "parent": "spelunkery:block/glowstick",
+  "textures": {
+    "1": "dyelation:block/spelunkery/glowstick/aqua",
+    "particle": "dyelation:block/spelunkery/glowstick/aqua"
+  }
+}

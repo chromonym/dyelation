@@ -46,6 +46,18 @@ repositories {
 		name = "FzzyMaven"
 		url = "https://maven.fzzyhmstrs.me/"
 	}
+	maven {
+        url "https://maven.firstdarkdev.xyz/snapshots"
+    }
+	maven {
+		name = "tterrag maven"
+		url = uri("https://maven.tterrag.com/")
+		content {
+			includeGroup("com.jozufozu.flywheel")
+		}
+	}
+	maven { url "https://maven.shedaniel.me/" }
+    maven { url "https://maven.terraformersmc.com/releases/" }
 }
 
 loom {
@@ -85,22 +97,25 @@ dependencies {
 	// Another Furniture - optional mod (stools, curtains, lamps, sofas, tall stools)
 	modCompileOnly("maven.modrinth:another-furniture:${project.another_furniture_version}")
 	modLocalRuntime("maven.modrinth:another-furniture:${project.another_furniture_version}")
-
 	// Bundle Backportish - optional mod (bundles)
 	modCompileOnly("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
 	modLocalRuntime("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
-
 	// Desire here (if permission granted)
-
 	// Farmer's Delight (Refabricated) - optional mod (canvas signs)
 	modCompileOnly("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
 	modLocalRuntime("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
-
 	// Items Displayed [Fabric] - optional mod (jewelry pillows)
 	modCompileOnly("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
 	modLocalRuntime("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
-
+	// Spelunkery - optional mod (glowsticks)
+	modCompileOnly("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
+	modLocalRuntime("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
 	// add more mods here
+
+	// Moonlight Lib - required for Spelunkery and Verdant
+	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
+	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
+
 
 	// EMI - recipe viewer for testing purposes
 	modLocalRuntime("dev.emi:emi-fabric:${project.emi_version}+${project.minecraft_version}")

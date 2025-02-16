@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "dyelation:item/spelunkery/glowstick/tan"
+  }
+}

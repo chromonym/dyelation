@@ -21,7 +21,7 @@ public class Dyelation implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		FabricLoader fl = FabricLoader.getInstance();
-		if (fl.isModLoaded("another_furniture")) {
+		if (fl.isModLoaded("another_furniture") && !fl.isModLoaded("patchup")) { // another furniture already supported by patch up
 			LOGGER.info("Another Furniture loaded, running common setup");
 			AnotherFurniture.initialize();
 		}
@@ -36,6 +36,10 @@ public class Dyelation implements ModInitializer {
 		if (fl.isModLoaded("items_displayed")) {
 			LOGGER.info("Items Displayed loaded, running setup");
 			ItemsDisplayed.initialize();
+		}
+		if (fl.isModLoaded("spelunkery")) {
+			LOGGER.info("Spelunkery loaded, running setup");
+			Spelunkery.initialize();
 		}
 	}
 }

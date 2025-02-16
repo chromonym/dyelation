@@ -11,7 +11,10 @@
 		"bundlebackportish.BundleColoringRecipeMixin",
 		"farmersdelight.AddCanvasSignsMixin",
 		"farmersdelight.DarkBackgroundSignsMixin",
-		"items_displayed.JewelryPillowEntityMixin"
+		"items_displayed.JewelryPillowEntityMixin",
+		"spelunkery.GlowstickItemMixin",
+		"spelunkery.ThrownGlowstickEntityMixin",
+		"spelunkery.ModCreativeTabsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

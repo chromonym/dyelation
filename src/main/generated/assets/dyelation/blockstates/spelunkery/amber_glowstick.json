@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "dyelation:block/spelunkery/amber_glowstick",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "dyelation:block/spelunkery/amber_glowstick",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dyelation:block/spelunkery/amber_glowstick",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "dyelation:block/spelunkery/amber_glowstick",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "dyelation:block/spelunkery/amber_glowstick"
+    },
+    "facing=west": {
+      "model": "dyelation:block/spelunkery/amber_glowstick",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

@@ -29,6 +29,10 @@ public class Dyelation implements ModInitializer {
 			LOGGER.info("Bundle Backport-ish loaded, running setup");
 			BundleBackportish.initialize();
 		}
+		if (fl.isModLoaded("desire")) {
+			LOGGER.info("Desire loaded, running setup");
+			Desire.initialize();
+		}
 		if (fl.isModLoaded("farmersdelight")) {
 			LOGGER.info("Farmer's Delight loaded, running setup");
 			FarmersDelight.initialize();

@@ -43,6 +43,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		public void generate(Consumer<RecipeJsonProvider> exporter) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.recipes(exporter, color);
+				DesireDatagen.recipes(exporter, color);
 				FarmersDelightDatagen.recipes(exporter, color);
 				ItemsDisplayedDatagen.recipes(exporter, color);
 				SpelunkeryDatagen.recipes(exporter, color);
@@ -59,6 +60,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		public void generate() {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.blockLootTables(this, color);
+				DesireDatagen.blockLootTables(this, color);
 				FarmersDelightDatagen.blockLootTables(this, color);
 				SpelunkeryDatagen.blockLootTables(this, color);
 				VerdantDatagen.blockLootTables(this, color);
@@ -74,6 +76,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		protected void configure(WrapperLookup arg) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.itemTags(this, color);
+				DesireDatagen.itemTags(this, color);
 				FarmersDelightDatagen.itemTags(this, color);
 				SpelunkeryDatagen.itemTags(this, color);
 				VerdantDatagen.itemTags(this, color);
@@ -92,6 +95,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		protected void configure(WrapperLookup arg) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.blockTags(this, color);
+				DesireDatagen.blockTags(this, color);
 				FarmersDelightDatagen.blockTags(this, color);
 				VerdantDatagen.blockTags(this, color);
 			});
@@ -110,6 +114,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 		public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.blockModels(blockStateModelGenerator, color);
+				DesireDatagen.blockModels(blockStateModelGenerator, color);
 				FarmersDelightDatagen.blockModels(blockStateModelGenerator, color);
 				SpelunkeryDatagen.blockModels(blockStateModelGenerator, color);
 				VerdantDatagen.blockModels(blockStateModelGenerator, color);
@@ -141,6 +146,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 			DyeCommon.doSomethingForAllColors(color -> {
 				AnotherFurnitureDatagen.langEnglish(translationBuilder, color);
 				BundleBackportishDatagen.langEnglish(translationBuilder, color);
+				DesireDatagen.langEnglish(translationBuilder, color);
 				FarmersDelightDatagen.langEnglish(translationBuilder, color);
 				ItemsDisplayedDatagen.langEnglish(translationBuilder, color);
 				SpelunkeryDatagen.langEnglish(translationBuilder, color);

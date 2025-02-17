@@ -126,6 +126,37 @@ public class DyeCommon {
         addInbetweenItemGroupDouble(RegistryKey.of(RegistryKeys.ITEM_GROUP, igName), itemsA, itemsB, brown, red, orange, yellow, lime, green, cyan, blue);
     }
 
+    public static <I extends ItemConvertible, J extends ItemConvertible, K extends ItemConvertible, L extends ItemConvertible> void addInbetweenItemGroupQuadruple(RegistryKey<ItemGroup> itemGroup, EnumMap<Color, I> itemsA, EnumMap<Color, J> itemsB, EnumMap<Color, K> itemsC, EnumMap<Color, L> itemsD, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
+        // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
+        // AND THERE ARE FOUR DIFFERENT TYPES OF ITEM (see: desire's colored stuff)
+        // note the ItemConvertibles should be the FOURTH item type
+        ItemGroupEvents.modifyEntriesEvent(itemGroup).register(content -> {
+            content.addAfter(brown, itemsA.get(Color.MAROON), itemsB.get(Color.MAROON), itemsC.get(Color.MAROON), itemsD.get(Color.MAROON),
+            itemsA.get(Color.ROSE), itemsB.get(Color.ROSE), itemsC.get(Color.ROSE), itemsD.get(Color.ROSE));
+            content.addAfter(red, itemsA.get(Color.CORAL), itemsB.get(Color.CORAL), itemsC.get(Color.CORAL), itemsD.get(Color.CORAL),
+            itemsA.get(Color.GINGER), itemsB.get(Color.GINGER), itemsC.get(Color.GINGER), itemsD.get(Color.GINGER));
+            content.addAfter(orange, itemsA.get(Color.TAN), itemsB.get(Color.TAN), itemsC.get(Color.TAN), itemsD.get(Color.TAN),
+            itemsA.get(Color.BEIGE), itemsB.get(Color.BEIGE), itemsC.get(Color.BEIGE), itemsD.get(Color.BEIGE));
+            content.addAfter(yellow, itemsA.get(Color.AMBER), itemsB.get(Color.AMBER), itemsC.get(Color.AMBER), itemsD.get(Color.AMBER),
+            itemsA.get(Color.OLIVE), itemsB.get(Color.OLIVE), itemsC.get(Color.OLIVE), itemsD.get(Color.OLIVE));
+            content.addAfter(lime, itemsA.get(Color.FOREST), itemsB.get(Color.FOREST), itemsC.get(Color.FOREST), itemsD.get(Color.FOREST));
+            content.addAfter(green, itemsA.get(Color.VERDANT), itemsB.get(Color.VERDANT), itemsC.get(Color.VERDANT), itemsD.get(Color.VERDANT),
+            itemsA.get(Color.TEAL), itemsB.get(Color.TEAL), itemsC.get(Color.TEAL), itemsD.get(Color.TEAL));
+            content.addAfter(cyan, itemsA.get(Color.MINT), itemsB.get(Color.MINT), itemsC.get(Color.MINT), itemsD.get(Color.MINT),
+            itemsA.get(Color.AQUA), itemsB.get(Color.AQUA), itemsC.get(Color.AQUA), itemsD.get(Color.AQUA));
+            content.addAfter(blue, itemsA.get(Color.SLATE), itemsB.get(Color.SLATE), itemsC.get(Color.SLATE), itemsD.get(Color.SLATE),
+            itemsA.get(Color.NAVY), itemsB.get(Color.NAVY), itemsC.get(Color.NAVY), itemsD.get(Color.NAVY),
+            itemsA.get(Color.INDIGO), itemsB.get(Color.INDIGO), itemsC.get(Color.INDIGO), itemsD.get(Color.INDIGO));
+        });
+    }
+
+    public static <I extends ItemConvertible, J extends ItemConvertible, K extends ItemConvertible, L extends ItemConvertible> void addInbetweenItemGroupQuadruple(Identifier igName, EnumMap<Color, I> itemsA, EnumMap<Color, J> itemsB, EnumMap<Color, K> itemsC, EnumMap<Color, L> itemsD, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {
+        // Adds items (in the EnumMap) to an ItemGroup. Use if the vanilla-colour items are in colour order (grayscale, brown, red, orange, yellow, etc)
+        // AND THERE ARE FOUR DIFFERENT TYPES OF ITEM (see: desire's colored stuff)
+        // note the ItemConvertibles should be the FOURTH item type
+        addInbetweenItemGroupQuadruple(RegistryKey.of(RegistryKeys.ITEM_GROUP, igName), itemsA, itemsB, itemsC, itemsD, brown, red, orange, yellow, lime, green, cyan, blue);
+    }
+
     public static Supplier<JsonElement> parentWithTexturesModel(String parent, String... textureNames) {
 		JsonObject modelFile = new JsonObject();
 		modelFile.addProperty("parent", parent);

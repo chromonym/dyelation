@@ -110,7 +110,9 @@ dependencies {
 	// Spelunkery - optional mod (glowsticks)
 	modCompileOnly("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
 	modLocalRuntime("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
-	// add more mods here
+	// Verdant - optional mod (primrose)
+	modCompileOnly("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
+	modLocalRuntime("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
 
 	// Moonlight Lib - required for Spelunkery and Verdant
 	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")

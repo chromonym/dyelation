@@ -41,5 +41,9 @@ public class Dyelation implements ModInitializer {
 			LOGGER.info("Spelunkery loaded, running setup");
 			Spelunkery.initialize();
 		}
+		if (fl.isModLoaded("verdant")) {
+			LOGGER.info("Verdant loaded, running setup");
+			Verdant.initialize();
+		}
 	}
 }

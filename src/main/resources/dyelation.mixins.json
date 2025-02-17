@@ -14,7 +14,9 @@
 		"items_displayed.JewelryPillowEntityMixin",
 		"spelunkery.GlowstickItemMixin",
 		"spelunkery.ThrownGlowstickEntityMixin",
-		"spelunkery.ModCreativeTabsMixin"
+		"spelunkery.ModCreativeTabsMixin",
+		"verdant.ModCreativeTabMixin",
+		"verdant.WeatheringHelperMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

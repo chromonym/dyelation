@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dye_depot:aqua_dye_from_primrose"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant/aqua_primrose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dyelation:verdant/aqua_primrose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdant/aqua_primrose",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dye_depot:aqua_dye_from_primrose"
+    ]
+  },
+  "sends_telemetry_event": false
+}

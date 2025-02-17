@@ -11,7 +11,6 @@ import org.spongepowered.asm.mixin.injection.ModifyArg;
 import com.ordana.spelunkery.reg.ModCreativeTabs;
 import com.ordana.spelunkery.reg.ModItems;
 
-import net.minecraft.item.Item;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.interop.Spelunkery;
 
@@ -20,9 +19,9 @@ public class ModCreativeTabsMixin {
     
     @ModifyArg(method = "registerItemsToTabs(Lnet/mehvahdjukaar/moonlight/api/platform/RegHelper$ItemToTabEvent;)V", index = 3,
     at = @At(value = "INVOKE", target = "Lcom/ordana/spelunkery/reg/ModCreativeTabs;after(Lnet/mehvahdjukaar/moonlight/api/platform/RegHelper$ItemToTabEvent;Lnet/minecraft/item/Item;Lnet/minecraft/registry/RegistryKey;[Ljava/util/function/Supplier;)V"))
-    private static Supplier<Item>[] addDyelationGlowsticks(Supplier<Item>[] suppliers) {
+    private static Supplier<?>[] addDyelationGlowsticks(Supplier<?>[] suppliers) {
         if (suppliers.length >= 17 && suppliers[1] == ModItems.WHITE_GLOWSTICK) {
-            ArrayList<Supplier<Item>> list = new ArrayList<Supplier<Item>>(Arrays.asList(suppliers));
+            ArrayList<Supplier<?>> list = new ArrayList<Supplier<?>>(Arrays.asList(suppliers));
             list.add(6, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.MAROON));
             list.add(7, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.ROSE));
             list.add(9, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.CORAL));
@@ -39,7 +38,7 @@ public class ModCreativeTabsMixin {
             list.add(27, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.SLATE));
             list.add(28, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.NAVY));
             list.add(29, () -> Spelunkery.GLOWSTICK_ITEMS.get(Color.INDIGO));
-            Supplier<Item>[] newSuppliers = new Supplier[list.size()];
+            Supplier<?>[] newSuppliers = new Supplier[list.size()];
             return list.toArray(newSuppliers);
         }
         return suppliers;

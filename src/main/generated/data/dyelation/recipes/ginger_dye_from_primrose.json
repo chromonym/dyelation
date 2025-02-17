@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dyelation:verdant/ginger_primrose"
+    }
+  ],
+  "result": {
+    "item": "dye_depot:ginger_dye"
+  }
+}

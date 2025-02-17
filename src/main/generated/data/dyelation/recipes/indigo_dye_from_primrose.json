@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dyelation:verdant/indigo_primrose"
+    }
+  ],
+  "result": {
+    "item": "dye_depot:indigo_dye"
+  }
+}

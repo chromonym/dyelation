@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dyelation:verdant/forest_primrose"
+    }
+  ],
+  "result": {
+    "item": "dye_depot:forest_dye"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dyelation:block/verdant/primrose/ginger"
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/ginger",
+        "y": 90
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/ginger",
+        "y": 180
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/ginger",
+        "y": 270
+      }
+    ]
+  }
+}

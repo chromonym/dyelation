@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dyelation:block/verdant/primrose/rose"
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/rose",
+        "y": 90
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/rose",
+        "y": 180
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/rose",
+        "y": 270
+      }
+    ]
+  }
+}

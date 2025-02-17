@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "dyelation:block/verdant/primrose/beige"
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/beige",
+        "y": 90
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/beige",
+        "y": 180
+      },
+      {
+        "model": "dyelation:block/verdant/primrose/beige",
+        "y": 270
+      }
+    ]
+  }
+}

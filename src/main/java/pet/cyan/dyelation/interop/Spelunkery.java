@@ -21,9 +21,7 @@ public class Spelunkery {
     public static EnumMap<Color, GlowstickBlock> GLOWSTICK_BLOCKS = new EnumMap<>(Color.class);
     public static EnumMap<Color, GlowstickItem> GLOWSTICK_ITEMS = new EnumMap<>(Color.class);
 
-    public static void initialize() {
-        //
-    }
+    public static void initialize() {}
 
     static {
         DyeCommon.doSomethingForAllColors(color -> {

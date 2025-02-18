@@ -195,6 +195,7 @@ public class DyeCommon {
             "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
             "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
             "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.registerParentedItemModel(stairs.get(color), getModdedBlockModelID(modName, color, blockName+"_stairs"));
     }
 
     public static void createSlabModel(BlockStateModelGenerator blockStateModelGenerator, Color color, EnumMap<Color, SlabBlock> slabs, EnumMap<Color, Block> fullBlocks, String blockName, String modName) {
@@ -212,6 +213,7 @@ public class DyeCommon {
             "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
             "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
             "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.registerParentedItemModel(slabs.get(color), getModdedBlockModelID(modName, color, blockName+"_slab"));
     }
 
     public static void createWallModel(BlockStateModelGenerator blockStateModelGenerator, Color color, EnumMap<Color, WallBlock> walls, EnumMap<Color, Block> fullBlocks, String blockName, String modName) {

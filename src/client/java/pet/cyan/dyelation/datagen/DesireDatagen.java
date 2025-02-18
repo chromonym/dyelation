@@ -51,6 +51,7 @@ public class DesireDatagen {
         tagProvider.getOrCreateBlockTagBuilder(BlockTags.STAIRS).add(Desire.CONCRETE_BRICK_STAIRS.get(color), Desire.TERRACOTTA_MOSAIC_STAIRS.get(color));
         tagProvider.getOrCreateBlockTagBuilder(BlockTags.SLABS).add(Desire.CONCRETE_BRICK_SLABS.get(color), Desire.TERRACOTTA_MOSAIC_SLABS.get(color));
         tagProvider.getOrCreateBlockTagBuilder(BlockTags.WALLS).add(Desire.CONCRETE_BRICK_WALLS.get(color), Desire.TERRACOTTA_MOSAIC_WALLS.get(color));
+        tagProvider.getOrCreateBlockTagBuilder(BlockTags.PICKAXE_MINEABLE).add(Desire.CONCRETE_BRICKS.get(color), Desire.TERRACOTTA_MOSAICS.get(color), Desire.CONCRETE_BRICK_STAIRS.get(color), Desire.TERRACOTTA_MOSAIC_STAIRS.get(color), Desire.CONCRETE_BRICK_SLABS.get(color), Desire.TERRACOTTA_MOSAIC_SLABS.get(color), Desire.CONCRETE_BRICK_WALLS.get(color), Desire.TERRACOTTA_MOSAIC_WALLS.get(color));
     }
     public static void itemTags(DyeItemTagGenerator tagProvider, Color color) {}
 }

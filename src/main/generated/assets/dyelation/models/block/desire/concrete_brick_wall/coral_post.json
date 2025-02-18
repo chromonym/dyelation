@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "dyelation:block/desire/coral_concrete_bricks"
+  }
+}

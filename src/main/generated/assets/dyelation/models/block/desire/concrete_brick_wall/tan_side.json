@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "dyelation:block/desire/tan_concrete_bricks"
+  }
+}

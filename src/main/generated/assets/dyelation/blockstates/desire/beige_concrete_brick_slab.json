@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/concrete_brick_slab/beige"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/beige_concrete_bricks"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/concrete_brick_slab/beige_top"
+    }
+  }
+}

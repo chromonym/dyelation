@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/concrete_brick_slab/verdant"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/verdant_concrete_bricks"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/concrete_brick_slab/verdant_top"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/mint"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/mint_terracotta_mosaic"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/mint_top"
+    }
+  }
+}

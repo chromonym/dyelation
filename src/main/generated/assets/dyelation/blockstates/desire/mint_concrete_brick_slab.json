@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/concrete_brick_slab/mint"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/mint_concrete_bricks"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/concrete_brick_slab/mint_top"
+    }
+  }
+}

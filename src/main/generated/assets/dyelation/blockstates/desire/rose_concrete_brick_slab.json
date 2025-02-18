@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/concrete_brick_slab/rose"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/rose_concrete_bricks"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/concrete_brick_slab/rose_top"
+    }
+  }
+}

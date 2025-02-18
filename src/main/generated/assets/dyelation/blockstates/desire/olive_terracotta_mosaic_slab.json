@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/olive"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/olive_terracotta_mosaic"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/olive_top"
+    }
+  }
+}

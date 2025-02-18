@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "dyelation:block/desire/rose_terracotta_mosaic"
+  }
+}

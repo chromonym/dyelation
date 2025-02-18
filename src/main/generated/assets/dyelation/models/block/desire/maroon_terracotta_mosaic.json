@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "dyelation:block/desire/maroon_terracotta_mosaic"
+  }
+}

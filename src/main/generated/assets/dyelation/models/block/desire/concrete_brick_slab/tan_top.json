@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "dyelation:block/desire/tan_concrete_bricks",
+    "side": "dyelation:block/desire/tan_concrete_bricks",
+    "top": "dyelation:block/desire/tan_concrete_bricks"
+  }
+}

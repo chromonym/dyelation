@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/aqua"
+    },
+    "type=double": {
+      "model": "dyelation:block/desire/aqua_terracotta_mosaic"
+    },
+    "type=top": {
+      "model": "dyelation:block/desire/terracotta_mosaic_slab/aqua_top"
+    }
+  }
+}

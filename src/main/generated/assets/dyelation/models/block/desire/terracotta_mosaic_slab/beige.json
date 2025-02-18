@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dyelation:block/desire/beige_terracotta_mosaic",
+    "side": "dyelation:block/desire/beige_terracotta_mosaic",
+    "top": "dyelation:block/desire/beige_terracotta_mosaic"
+  }
+}

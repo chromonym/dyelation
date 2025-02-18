@@ -8,6 +8,12 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ModelIds;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
@@ -17,6 +23,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
+import pet.cyan.dyelation.interop.Desire;
 
 public class DyeCommon {
 
@@ -167,5 +174,64 @@ public class DyeCommon {
 		modelFile.add("textures", textures);
 		return () -> modelFile;
 	}
+
+    public static void createStairsModel(BlockStateModelGenerator blockStateModelGenerator, Color color, EnumMap<Color, StairsBlock> stairs, EnumMap<Color, Block> fullBlocks, String blockName, String modName) {
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createStairsBlockState(stairs.get(color),
+            getModdedBlockModelID(modName, color, blockName+"_stairs", "inner"),
+            getModdedBlockModelID(modName, color, blockName+"_stairs"),
+            getModdedBlockModelID(modName, color, blockName+"_stairs", "outer")));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(Desire.MOD_NAME, color, blockName+"_stairs", "inner"), parentWithTexturesModel(
+            "minecraft:block/inner_stairs",
+            "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(Desire.MOD_NAME, color, blockName+"_stairs"), parentWithTexturesModel(
+            "minecraft:block/stairs",
+            "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(Desire.MOD_NAME, color, blockName+"_stairs", "outer"), parentWithTexturesModel(
+            "minecraft:block/outer_stairs",
+            "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+    }
+
+    public static void createSlabModel(BlockStateModelGenerator blockStateModelGenerator, Color color, EnumMap<Color, SlabBlock> slabs, EnumMap<Color, Block> fullBlocks, String blockName, String modName) {
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(slabs.get(color),
+            getModdedBlockModelID(modName, color, blockName+"_slab"),
+            getModdedBlockModelID(modName, color, blockName+"_slab", "top"),
+            ModelIds.getBlockModelId(fullBlocks.get(color))));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(Desire.MOD_NAME, color, blockName+"_slab"), parentWithTexturesModel(
+            "minecraft:block/slab",
+            "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(Desire.MOD_NAME, color, blockName+"_slab", "top"), parentWithTexturesModel(
+            "minecraft:block/slab_top",
+            "bottom", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "side", ModelIds.getBlockModelId(fullBlocks.get(color)).toString(),
+            "top", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+    }
+
+    public static void createWallModel(BlockStateModelGenerator blockStateModelGenerator, Color color, EnumMap<Color, WallBlock> walls, EnumMap<Color, Block> fullBlocks, String blockName, String modName) {
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createWallBlockState(walls.get(color),
+        getModdedBlockModelID(modName, color, blockName+"_wall", "post"),
+        getModdedBlockModelID(modName, color, blockName+"_wall", "side"),
+        getModdedBlockModelID(modName, color, blockName+"_wall", "side_tall")));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(modName, color, blockName+"_wall", "post"), parentWithTexturesModel(
+            "minecraft:block/template_wall_post",
+            "wall", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(modName, color, blockName+"_wall", "side"), parentWithTexturesModel(
+            "minecraft:block/template_wall_side",
+            "wall", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(modName, color, blockName+"_wall", "side_tall"), parentWithTexturesModel(
+            "minecraft:block/template_wall_side_tall",
+            "wall", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.modelCollector.accept(getModdedBlockModelID(modName, color, blockName+"_wall", "inventory"), parentWithTexturesModel(
+            "minecraft:block/wall_inventory",
+            "wall", ModelIds.getBlockModelId(fullBlocks.get(color)).toString()));
+        blockStateModelGenerator.registerParentedItemModel(walls.get(color), getModdedBlockModelID(modName, color, blockName+"_wall", "inventory"));
+    }
 
 }

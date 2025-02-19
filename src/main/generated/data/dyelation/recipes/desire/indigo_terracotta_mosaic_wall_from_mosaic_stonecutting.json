@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dyelation:desire/indigo_terracotta_mosaic"
+  },
+  "result": "dyelation:desire/indigo_terracotta_mosaic_wall"
+}

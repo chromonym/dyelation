@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dyelation:desire/maroon_concrete_bricks"
+  },
+  "result": "dyelation:desire/maroon_concrete_brick_wall"
+}

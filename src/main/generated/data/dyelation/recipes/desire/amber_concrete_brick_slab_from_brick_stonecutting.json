@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dyelation:desire/amber_concrete_bricks"
+  },
+  "result": "dyelation:desire/amber_concrete_brick_slab"
+}

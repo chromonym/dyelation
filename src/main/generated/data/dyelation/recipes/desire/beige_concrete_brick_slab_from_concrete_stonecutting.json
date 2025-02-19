@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:beige_concrete"
+  },
+  "result": "dyelation:desire/beige_concrete_brick_slab"
+}

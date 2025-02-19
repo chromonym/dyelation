@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:amber_glazed_terracotta"
+  },
+  "result": "dyelation:desire/amber_terracotta_mosaic"
+}

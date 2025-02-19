@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "dye_depot:ginger_glazed_terracotta"
+    }
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "dyelation:desire/ginger_terracotta_mosaic"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "dyelation:desire/mint_terracotta_mosaic"
+    }
+  },
+  "pattern": [
+    "CCC"
+  ],
+  "result": {
+    "count": 6,
+    "item": "dyelation:desire/mint_terracotta_mosaic_slab"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:rose_glazed_terracotta"
+  },
+  "result": "dyelation:desire/rose_terracotta_mosaic_slab"
+}

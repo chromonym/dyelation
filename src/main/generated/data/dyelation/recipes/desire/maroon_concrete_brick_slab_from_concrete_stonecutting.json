@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:maroon_concrete"
+  },
+  "result": "dyelation:desire/maroon_concrete_brick_slab"
+}

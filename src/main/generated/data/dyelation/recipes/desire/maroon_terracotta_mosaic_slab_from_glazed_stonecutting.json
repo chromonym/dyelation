@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:maroon_glazed_terracotta"
+  },
+  "result": "dyelation:desire/maroon_terracotta_mosaic_slab"
+}

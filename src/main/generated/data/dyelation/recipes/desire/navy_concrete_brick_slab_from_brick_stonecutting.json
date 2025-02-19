@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dyelation:desire/navy_concrete_bricks"
+  },
+  "result": "dyelation:desire/navy_concrete_brick_slab"
+}

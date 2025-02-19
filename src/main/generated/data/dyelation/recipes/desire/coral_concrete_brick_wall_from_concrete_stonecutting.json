@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:coral_concrete"
+  },
+  "result": "dyelation:desire/coral_concrete_brick_wall"
+}

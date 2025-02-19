@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:navy_glazed_terracotta"
+  },
+  "result": "dyelation:desire/navy_terracotta_mosaic_wall"
+}

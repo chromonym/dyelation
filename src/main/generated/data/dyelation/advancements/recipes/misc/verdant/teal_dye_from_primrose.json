@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:verdant/teal_dye_from_primrose"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verdant/teal_primrose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dyelation:verdant/teal_primrose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_verdant/teal_primrose",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:verdant/teal_dye_from_primrose"
+    ]
+  },
+  "sends_telemetry_event": false
+}

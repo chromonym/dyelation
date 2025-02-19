@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dyelation:desire/slate_concrete_bricks"
+  },
+  "result": "dyelation:desire/slate_concrete_brick_wall"
+}

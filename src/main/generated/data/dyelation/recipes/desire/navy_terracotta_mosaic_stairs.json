@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "dyelation:desire/navy_terracotta_mosaic"
+    }
+  },
+  "pattern": [
+    "C  ",
+    "CC ",
+    "CCC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "dyelation:desire/navy_terracotta_mosaic_stairs"
+  },
+  "show_notification": true
+}

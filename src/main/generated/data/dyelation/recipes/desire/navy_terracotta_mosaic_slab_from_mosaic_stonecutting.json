@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dyelation:desire/navy_terracotta_mosaic"
+  },
+  "result": "dyelation:desire/navy_terracotta_mosaic_slab"
+}

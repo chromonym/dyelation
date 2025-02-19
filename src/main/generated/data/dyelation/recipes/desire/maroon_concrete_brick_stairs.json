@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": {
+      "item": "dyelation:desire/maroon_concrete_bricks"
+    }
+  },
+  "pattern": [
+    "C  ",
+    "CC ",
+    "CCC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "dyelation:desire/maroon_concrete_brick_stairs"
+  },
+  "show_notification": true
+}

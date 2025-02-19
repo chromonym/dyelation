@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:tan_glazed_terracotta"
+  },
+  "result": "dyelation:desire/tan_terracotta_mosaic"
+}

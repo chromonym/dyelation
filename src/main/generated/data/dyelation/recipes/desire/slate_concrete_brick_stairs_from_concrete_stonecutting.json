@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:slate_concrete"
+  },
+  "result": "dyelation:desire/slate_concrete_brick_stairs"
+}

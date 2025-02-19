@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:coral_glazed_terracotta"
+  },
+  "result": "dyelation:desire/coral_terracotta_mosaic_slab"
+}

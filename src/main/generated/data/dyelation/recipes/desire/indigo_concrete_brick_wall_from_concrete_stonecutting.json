@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dye_depot:indigo_concrete"
+  },
+  "result": "dyelation:desire/indigo_concrete_brick_wall"
+}

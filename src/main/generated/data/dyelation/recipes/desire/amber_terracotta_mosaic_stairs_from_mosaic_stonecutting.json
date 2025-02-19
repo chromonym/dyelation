@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "dyelation:desire/amber_terracotta_mosaic"
+  },
+  "result": "dyelation:desire/amber_terracotta_mosaic_stairs"
+}

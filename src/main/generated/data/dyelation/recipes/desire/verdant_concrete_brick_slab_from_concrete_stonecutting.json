@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "dye_depot:verdant_concrete"
+  },
+  "result": "dyelation:desire/verdant_concrete_brick_slab"
+}

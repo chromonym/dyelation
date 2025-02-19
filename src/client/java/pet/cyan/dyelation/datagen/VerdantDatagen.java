@@ -8,7 +8,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.loader.impl.util.StringUtil;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.server.recipe.CraftingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -24,7 +23,7 @@ public class VerdantDatagen {
     public static void recipes(Consumer<RecipeJsonProvider> exporter, Color color) {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, color.dyeItem).input(Verdant.PRIMROSES.get(color))
         .criterion(FabricRecipeProvider.hasItem(Verdant.PRIMROSES.get(color)), FabricRecipeProvider.conditionsFromItem(Verdant.PRIMROSES.get(color)))
-        .offerTo(exporter, CraftingRecipeJsonBuilder.getItemId(color.dyeItem)+"_from_primrose");
+        .offerTo(exporter, "verdant/"+color.asString()+"_dye_from_primrose");
     }
 
     public static void blockLootTables(FabricBlockLootTableProvider provider, Color color) {

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mint_concrete": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dye_depot:mint_concrete"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dyelation:desire/mint_concrete_brick_stairs_from_concrete_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_mint_concrete",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dyelation:desire/mint_concrete_brick_stairs_from_concrete_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

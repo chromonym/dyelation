@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_desire/rose_terracotta_mosaic": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dyelation:desire/rose_terracotta_mosaic"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dyelation:desire/rose_terracotta_mosaic_slab_from_mosaic_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_desire/rose_terracotta_mosaic",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dyelation:desire/rose_terracotta_mosaic_slab_from_mosaic_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

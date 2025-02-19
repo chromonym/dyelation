@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "dyelation:desire/slate_terracotta_mosaic"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CCC"
+  ],
+  "result": {
+    "count": 6,
+    "item": "dyelation:desire/slate_terracotta_mosaic_wall"
+  },
+  "show_notification": true
+}

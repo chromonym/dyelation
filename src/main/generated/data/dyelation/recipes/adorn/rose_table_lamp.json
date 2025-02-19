@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "adorn:table_lamp",
+  "key": {
+    "-": {
+      "item": "dye_depot:rose_carpet"
+    },
+    "|": {
+      "item": "adorn:stone_torch"
+    }
+  },
+  "pattern": [
+    "-",
+    "|"
+  ],
+  "result": {
+    "item": "adorn:rose_table_lamp"
+  },
+  "show_notification": true
+}

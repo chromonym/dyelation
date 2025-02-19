@@ -4,7 +4,6 @@
 	"compatibilityLevel": "JAVA_17",
 	"plugin": "pet.cyan.dyelation.mixin.ConfigPlugin",
 	"mixins": [
-		"ExampleMixin",
 		"another_furniture.LampBlockMixin",
 		"another_furniture.LampConnectorBlockMixin",
 		"bundlebackportish.CreativeInventoryMixin",

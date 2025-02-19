@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "adorn:sofa",
+  "key": {
+    "S": {
+      "tag": "c:wooden_rods"
+    },
+    "W": {
+      "item": "dye_depot:navy_wool"
+    }
+  },
+  "pattern": [
+    " W",
+    "WW",
+    "SS"
+  ],
+  "result": {
+    "count": 3,
+    "item": "adorn:navy_sofa"
+  },
+  "show_notification": true
+}

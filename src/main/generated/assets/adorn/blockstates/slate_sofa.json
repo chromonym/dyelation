@@ -1,0 +1,215 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_center",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "facing": "north"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_left",
+        "y": 270
+      },
+      "when": {
+        "connected_left": "false",
+        "facing": "north",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_right",
+        "y": 270
+      },
+      "when": {
+        "connected_right": "false",
+        "facing": "north",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_left",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "facing": "north",
+        "front": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_right",
+        "uvlock": true,
+        "y": 270
+      },
+      "when": {
+        "facing": "north",
+        "front": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_center",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "facing": "south"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_left",
+        "y": 90
+      },
+      "when": {
+        "connected_left": "false",
+        "facing": "south",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_right",
+        "y": 90
+      },
+      "when": {
+        "connected_right": "false",
+        "facing": "south",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_left",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "facing": "south",
+        "front": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_right",
+        "uvlock": true,
+        "y": 90
+      },
+      "when": {
+        "facing": "south",
+        "front": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_center",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "facing": "west"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_left",
+        "y": 180
+      },
+      "when": {
+        "connected_left": "false",
+        "facing": "west",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_right",
+        "y": 180
+      },
+      "when": {
+        "connected_right": "false",
+        "facing": "west",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_left",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "facing": "west",
+        "front": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_right",
+        "uvlock": true,
+        "y": 180
+      },
+      "when": {
+        "facing": "west",
+        "front": "right"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_center",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_left"
+      },
+      "when": {
+        "connected_left": "false",
+        "facing": "east",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_arm_right"
+      },
+      "when": {
+        "connected_right": "false",
+        "facing": "east",
+        "front": "none"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_left",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "left"
+      }
+    },
+    {
+      "apply": {
+        "model": "adorn:block/slate_sofa_corner_right",
+        "uvlock": true
+      },
+      "when": {
+        "facing": "east",
+        "front": "right"
+      }
+    }
+  ]
+}

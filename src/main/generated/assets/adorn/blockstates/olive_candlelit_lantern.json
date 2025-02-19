@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "adorn:block/olive_candlelit_lantern_standing"
+    },
+    "hanging=true": {
+      "model": "adorn:block/olive_candlelit_lantern_hanging"
+    }
+  }
+}

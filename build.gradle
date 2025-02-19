@@ -94,38 +94,45 @@ dependencies {
 	// Fzzy Config - used for the. config.
 	modImplementation "me.fzzyhmstrs:fzzy_config:${project.fzzy_config_version}+${project.minecraft_version}"
 
-	// Another Furniture - optional mod (stools, curtains, lamps, sofas, tall stools)
+	// MODS THAT REQUIRE THIS MOD TO ADD BLOCKS/ITEMS/ETC
+	// Another Furniture (stools, curtains, lamps, sofas, tall stools)
 	modCompileOnly("maven.modrinth:another-furniture:${project.another_furniture_version}")
 	modLocalRuntime("maven.modrinth:another-furniture:${project.another_furniture_version}")
-	// Bundle Backportish - optional mod (bundles)
+	// Bundle Backportish (bundles)
 	modCompileOnly("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
 	modLocalRuntime("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
-	// Desire - optional mod (concrete bricks, terracotta mosaics)
+	// Desire (concrete bricks, terracotta mosaics)
 	modCompileOnly("maven.modrinth:desiremod:${project.desire_version}-${project.minecraft_version}")
 	modLocalRuntime("maven.modrinth:desiremod:${project.desire_version}-${project.minecraft_version}")
-	// Farmer's Delight (Refabricated) - optional mod (canvas signs)
+	// Farmer's Delight (Refabricated) (canvas signs)
 	modCompileOnly("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
 	modLocalRuntime("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
-	// Items Displayed [Fabric] - optional mod (jewelry pillows)
+	// Items Displayed [Fabric] (jewelry pillows)
 	modCompileOnly("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
 	modLocalRuntime("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
-	// Spelunkery - optional mod (glowsticks)
+	// Spelunkery (glowsticks)
 	modCompileOnly("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
 	modLocalRuntime("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
-	// Verdant - optional mod (primrose)
+	// Verdant (primrose)
 	modCompileOnly("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
 	modLocalRuntime("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
 
+	// MODS THAT AUTOMATICALLY ADD DYE DEPOT COLOURED ITEMS BUT REQUIRE DATAPACKS/RESOURCEPACKS TO FIX
+	// Adorn (sofas, table lamps, candlelit lanterns)
+	modCompileOnly("maven.modrinth:adorn:${project.adorn_version}-fabric")
+	modLocalRuntime("maven.modrinth:adorn:${project.adorn_version}-fabric")
+
+	// REQUIREMENTS FOR ANY ABOVE MODS
 	// Moonlight Lib - required for Spelunkery and Verdant
 	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 
-
-	// EMI - recipe viewer for testing purposes
+	// CLIENT-SIDE MODS FOR TESTING
+	// EMI - recipe viewer
 	modLocalRuntime("dev.emi:emi-fabric:${project.emi_version}+${project.minecraft_version}")
-	// Jade - block info mod for testing purposes
+	// Jade - block info
 	modLocalRuntime("maven.modrinth:jade:${project.jade_version}+fabric")
-	// Mod Menu - mod list for testing purposes
+	// Mod Menu - mod list
 	modLocalRuntime("com.terraformersmc:modmenu:${project.modmenu_version}")
 
 	/*

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "adorn:block/indigo_table_lamp",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "adorn:block/indigo_table_lamp",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "adorn:block/indigo_table_lamp",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "adorn:block/indigo_table_lamp",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "adorn:block/indigo_table_lamp"
+    },
+    "facing=west": {
+      "model": "adorn:block/indigo_table_lamp",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

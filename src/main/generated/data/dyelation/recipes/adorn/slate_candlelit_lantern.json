@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "adorn:candlelit_lantern",
+  "key": {
+    "*": {
+      "tag": "c:iron_nuggets"
+    },
+    "|": {
+      "item": "dye_depot:slate_candle"
+    }
+  },
+  "pattern": [
+    "***",
+    "*|*",
+    "***"
+  ],
+  "result": {
+    "item": "adorn:slate_candlelit_lantern"
+  },
+  "show_notification": true
+}

@@ -48,6 +48,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				ItemsDisplayedDatagen.recipes(exporter, color);
 				SpelunkeryDatagen.recipes(exporter, color);
 				VerdantDatagen.recipes(exporter, color);
+				AdornDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -64,6 +65,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				FarmersDelightDatagen.blockLootTables(this, color);
 				SpelunkeryDatagen.blockLootTables(this, color);
 				VerdantDatagen.blockLootTables(this, color);
+				AdornDatagen.blockLootTables(this, color);
 			});
 		}
 	}
@@ -80,6 +82,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				FarmersDelightDatagen.itemTags(this, color);
 				SpelunkeryDatagen.itemTags(this, color);
 				VerdantDatagen.itemTags(this, color);
+				AdornDatagen.itemTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateItemTagBuilder(TagKey<Item> tagKey) {
@@ -98,6 +101,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				DesireDatagen.blockTags(this, color);
 				FarmersDelightDatagen.blockTags(this, color);
 				VerdantDatagen.blockTags(this, color);
+				AdornDatagen.blockTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateBlockTagBuilder(TagKey<Block> tagKey) {
@@ -118,6 +122,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				FarmersDelightDatagen.blockModels(blockStateModelGenerator, color);
 				SpelunkeryDatagen.blockModels(blockStateModelGenerator, color);
 				VerdantDatagen.blockModels(blockStateModelGenerator, color);
+				AdornDatagen.blockModels(blockStateModelGenerator, color);
 			});
 
 		}
@@ -131,6 +136,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				ItemsDisplayedDatagen.itemModels(itemModelGenerator, color);
 				SpelunkeryDatagen.itemModels(itemModelGenerator, color);
 				VerdantDatagen.itemModels(itemModelGenerator, color);
+				AdornDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -151,6 +157,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				ItemsDisplayedDatagen.langEnglish(translationBuilder, color);
 				SpelunkeryDatagen.langEnglish(translationBuilder, color);
 				VerdantDatagen.langEnglish(translationBuilder, color);
+				AdornDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

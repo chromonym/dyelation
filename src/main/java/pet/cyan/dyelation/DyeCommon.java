@@ -72,8 +72,20 @@ public class DyeCommon {
         return new Identifier(Dyelation.MOD_ID, "block/"+ modId + "/"+ itemName + "/" + color.dye.getName());
     }
 
+    public static Identifier getDefaultBlockModelID(String modId, Color color, String itemName, String suffix) {
+        return new Identifier(modId, "block/"+ color.dye.getName() + "_" + itemName + "_" + suffix);
+    }
+
+    public static Identifier getDefaultBlockModelID(String modId, Color color, String itemName) {
+        return new Identifier(modId, "block/"+ color.dye.getName() + "_" + itemName);
+    }
+
     public static Identifier getModdedItemModelID(String modId, Color color, String itemName) {
         return new Identifier(Dyelation.MOD_ID, "item/"+getModdedItemName(modId, color, itemName));
+    }
+
+    public static Identifier getDefaultItemModelID(String modId, Color color, String itemName) {
+        return new Identifier(modId, "item/"+ color.dye.getName() + "_" + itemName);
     }
 
     public static <I extends ItemConvertible> void addInbetweenItemGroup(RegistryKey<ItemGroup> itemGroup, EnumMap<Color, I> items, ItemConvertible brown, ItemConvertible red, ItemConvertible orange, ItemConvertible yellow, ItemConvertible lime, ItemConvertible green, ItemConvertible cyan, ItemConvertible blue) {

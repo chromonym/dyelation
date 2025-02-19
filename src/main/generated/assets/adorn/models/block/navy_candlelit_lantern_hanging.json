@@ -1,0 +1,6 @@
+{
+  "parent": "adorn:block/templates/candlelit_lantern_hanging",
+  "textures": {
+    "candle": "dye_depot:block/navy_candle_lit"
+  }
+}

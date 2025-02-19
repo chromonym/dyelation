@@ -49,6 +49,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SpelunkeryDatagen.recipes(exporter, color);
 				VerdantDatagen.recipes(exporter, color);
 				AdornDatagen.recipes(exporter, color);
+				SupplementariesDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -66,6 +67,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SpelunkeryDatagen.blockLootTables(this, color);
 				VerdantDatagen.blockLootTables(this, color);
 				AdornDatagen.blockLootTables(this, color);
+				SupplementariesDatagen.blockLootTables(this, color);
 			});
 		}
 	}
@@ -102,6 +104,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				FarmersDelightDatagen.blockTags(this, color);
 				VerdantDatagen.blockTags(this, color);
 				AdornDatagen.blockTags(this, color);
+				SupplementariesDatagen.blockTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateBlockTagBuilder(TagKey<Block> tagKey) {
@@ -123,6 +126,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SpelunkeryDatagen.blockModels(blockStateModelGenerator, color);
 				VerdantDatagen.blockModels(blockStateModelGenerator, color);
 				AdornDatagen.blockModels(blockStateModelGenerator, color);
+				SupplementariesDatagen.blockModels(blockStateModelGenerator, color);
 			});
 
 		}
@@ -137,6 +141,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SpelunkeryDatagen.itemModels(itemModelGenerator, color);
 				VerdantDatagen.itemModels(itemModelGenerator, color);
 				AdornDatagen.itemModels(itemModelGenerator, color);
+				SupplementariesDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -158,6 +163,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SpelunkeryDatagen.langEnglish(translationBuilder, color);
 				VerdantDatagen.langEnglish(translationBuilder, color);
 				AdornDatagen.langEnglish(translationBuilder, color);
+				SupplementariesDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

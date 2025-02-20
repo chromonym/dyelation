@@ -107,6 +107,7 @@ dependencies {
 	// Farmer's Delight (Refabricated) (canvas signs)
 	modCompileOnly("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
 	modLocalRuntime("vectorwing:FarmersDelight:${project.minecraft_version}-${project.farmers_delight_version}+refabricated")
+	// Hexical here
 	// Items Displayed [Fabric] (jewelry pillows)
 	modCompileOnly("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
 	modLocalRuntime("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
@@ -121,14 +122,18 @@ dependencies {
 	// Adorn (sofas, table lamps, candlelit lanterns)
 	modCompileOnly("maven.modrinth:adorn:${project.adorn_version}-fabric")
 	modLocalRuntime("maven.modrinth:adorn:${project.adorn_version}-fabric")
-	// Amendments here
+	// Amendments (candles on skulls, banners on ceilings)
+	modCompileOnly("maven.modrinth:amendments:1.20-${project.amendments_version}")
+	modLocalRuntime("maven.modrinth:amendments:1.20-${project.amendments_version}")
 	// Hex Casting here
 	// Supplementaries (mostly handled by Dye Depot itself, but still need to fix buntings, awnings)
 	modCompileOnly("maven.modrinth:supplementaries:${project.supplementaries_version}")
 	modLocalRuntime("maven.modrinth:supplementaries:${project.supplementaries_version}")
+	// SuppSquared here
+	// Waystones here
 
 	// REQUIREMENTS FOR ANY ABOVE MODS
-	// Moonlight Lib - required for Spelunkery, Verdant, Supplementaries
+	// Moonlight Lib - required for Spelunkery, Verdant, Amendments, Supplementaries
 	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 

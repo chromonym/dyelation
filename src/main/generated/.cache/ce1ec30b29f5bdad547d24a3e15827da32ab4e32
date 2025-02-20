@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-20T12:30:34.1494445	Dyelation/Block Loot Tables
+// 1.20.1	2025-02-20T16:12:14.3791166	Dyelation/Block Loot Tables
 f0bcb2b72ef9bc3dc4e2a9e2e46e8f377b635296 data\adorn\loot_tables\blocks\forest_sofa.json
 df5bd94d57866065bac1479fe4099198a7fef56b data\dyelation\loot_tables\blocks\desire\amber_terracotta_mosaic_stairs.json
 f735922af55f0e71885dfc557c78aaf4d1357b6a data\dyelation\loot_tables\blocks\verdant\verdant_primrose.json
@@ -225,8 +225,8 @@ aea0edc921f00e7ddb3a3d132b7d2559e37d8f88 data\dyelation\loot_tables\blocks\desir
 0c089e2ca41babed69d44b7f67e6543899176718 data\dyelation\loot_tables\blocks\desire\indigo_terracotta_mosaic_stairs.json
 5d11540df8da66b3d934c92ba5a4bec127edc6ee data\dyelation\loot_tables\blocks\farmersdelight\olive_canvas_sign.json
 8f4b6c3fc501491ad3ef4c565646b2d9b2fce45d data\dyelation\loot_tables\blocks\desire\navy_concrete_bricks.json
-0dd19e9133acaaf0021ce361ce170f5b0ec5327b data\adorn\loot_tables\blocks\navy_sofa.json
 fd45d37a8abb1abc690c28d1e591f72043b4bbe8 data\dyelation\loot_tables\blocks\another_furniture\tan_stool.json
+0dd19e9133acaaf0021ce361ce170f5b0ec5327b data\adorn\loot_tables\blocks\navy_sofa.json
 531f901810e0993cf8a99ed8268f737e17d1c3d2 data\dyelation\loot_tables\blocks\spelunkery\rose_glowstick.json
 2a54fc8fd58fc41f1ca6baecbd3f459a263bcd8d data\dyelation\loot_tables\blocks\spelunkery\mint_glowstick.json
 ce0d0dcc4d532312f553882de454be3afbda3aef data\dyelation\loot_tables\blocks\desire\teal_terracotta_mosaic_stairs.json
@@ -254,8 +254,8 @@ d0c1883e867d9c860b409cbedc08afa93ca53ea1 data\adorn\loot_tables\blocks\rose_tabl
 8a1c6d5dd1d59178ea2c07afc81bd39bc8c26bd8 data\dyelation\loot_tables\blocks\desire\rose_terracotta_mosaic_slab.json
 4566b080acadfdf49355506046bbef092f7b23fd data\dyelation\loot_tables\blocks\verdant\aqua_primrose.json
 12657c88657e489b5336518228d9acc2c400e69b data\dyelation\loot_tables\blocks\desire\coral_terracotta_mosaic.json
-d57a3202cbbef64ea09631dca3236f14f773bd1c data\dyelation\loot_tables\blocks\verdant\ginger_primrose.json
 b41d95289419cac01d796498a35f3c396cb4f2ff data\dyelation\loot_tables\blocks\desire\amber_terracotta_mosaic.json
+d57a3202cbbef64ea09631dca3236f14f773bd1c data\dyelation\loot_tables\blocks\verdant\ginger_primrose.json
 81f8d6c938d8f0ba0a3f791db5778c309aff2bdf data\dyelation\loot_tables\blocks\desire\maroon_concrete_brick_stairs.json
 accbc873f274730154be47ccd1fbdad178b26237 data\dyelation\loot_tables\blocks\desire\verdant_terracotta_mosaic_stairs.json
 60749000964f51ca03d33297935a44e395166c7f data\dyelation\loot_tables\blocks\another_furniture\mint_lamp.json

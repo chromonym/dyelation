@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "1": {
+      "item": "dye_depot:teal_candle"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "1",
+    "2"
+  ],
+  "result": {
+    "item": "suppsquared:gold_candle_holder_teal"
+  },
+  "show_notification": true
+}

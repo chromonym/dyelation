@@ -129,11 +129,13 @@ dependencies {
 	// Supplementaries (mostly handled by Dye Depot itself, but still need to fix buntings, awnings)
 	modCompileOnly("maven.modrinth:supplementaries:${project.supplementaries_version}")
 	modLocalRuntime("maven.modrinth:supplementaries:${project.supplementaries_version}")
-	// SuppSquared here
+	// SuppSquared (sacks, gold candle holders)
+	modCompileOnly("maven.modrinth:supplementaries-squared:1.20-${project.supplementaries_squared_version}")
+	modLocalRuntime("maven.modrinth:supplementaries-squared:1.20-${project.supplementaries_squared_version}")
 	// Waystones here
 
 	// REQUIREMENTS FOR ANY ABOVE MODS
-	// Moonlight Lib - required for Spelunkery, Verdant, Amendments, Supplementaries
+	// Moonlight Lib - required for Spelunkery, Verdant, Amendments, Supplementaries, SuppSq
 	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 

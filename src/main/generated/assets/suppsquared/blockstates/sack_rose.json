@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=false": {
+      "model": "suppsquared:block/sacks/rose_closed"
+    },
+    "open=true": {
+      "model": "suppsquared:block/sacks/rose_open"
+    }
+  }
+}

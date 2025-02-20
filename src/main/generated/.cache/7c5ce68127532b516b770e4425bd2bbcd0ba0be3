@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-19T16:53:55.6849589	Dyelation/Tags for minecraft:block
+// 1.20.1	2025-02-20T12:30:34.1604595	Dyelation/Tags for minecraft:block
 585075573287fc06ad77580bfcb0ed1b6892fa0b data\minecraft\tags\blocks\ceiling_hanging_signs.json
 5a0704f21188e14cf17fc66e92aa3b3e33c1c278 data\minecraft\tags\blocks\wall_hanging_signs.json
 af624135fc2e3835ce811b6bef11ccdfb701e70c data\another_furniture\tags\blocks\lamps.json
@@ -13,7 +13,7 @@ d5056175157aa0c08e465668178d2183f384d180 data\minecraft\tags\blocks\mineable\pic
 b558dbed3f8688d46d8c29eb693c09a0e59a69f5 data\adorn\tags\blocks\candlelit_lanterns.json
 359b5ab096f4c28dc2aac16225b6d8077df1bded data\minecraft\tags\blocks\slabs.json
 ae47c929a508c9bfca38a2238f2b129015bfb5ce data\fabric\tags\blocks\mineable\shears.json
-4d0d4667f4da1f2aeffc964906a4ba7b7146d439 data\another_furniture\tags\blocks\stools.json
 ed91ce53a8ac24e8f6e637a956b757748dcd7019 data\another_furniture\tags\blocks\curtains.json
+4d0d4667f4da1f2aeffc964906a4ba7b7146d439 data\another_furniture\tags\blocks\stools.json
 1ce9c911d6b6a1c2d6d136b91f539b560d1fa7a1 data\minecraft\tags\blocks\standing_signs.json
 eda262d60cba89d4caabb236323fc183b4fd282e data\minecraft\tags\blocks\stairs.json

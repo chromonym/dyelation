@@ -4,6 +4,7 @@ import java.util.function.Consumer;
 
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider.TranslationBuilder;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.mininglevel.v1.FabricMineableTags;
 import net.fabricmc.loader.impl.util.StringUtil;
 import net.mehvahdjukaar.supplementaries.common.block.blocks.AwningBlock;
@@ -15,6 +16,8 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.VariantSettings;
 import net.minecraft.data.client.VariantsBlockStateSupplier;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import pet.cyan.dyelation.Color;
@@ -22,7 +25,13 @@ import pet.cyan.dyelation.DyeCommon;
 import pet.cyan.dyelation.DyelationDataGenerator.DyeBlockTagGenerator;
 
 public class SupplementariesDatagen {
-    public static void recipes(Consumer<RecipeJsonProvider> exporter, Color color) {}
+    public static void recipes(Consumer<RecipeJsonProvider> exporter, Color color) {
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModRegistry.AWNINGS.get(DyeColor.byId(color.dye.getId())).get())
+        .input(ModRegistry.AWNINGS.get(null).get())
+        .input(color.dyeItem)
+        .criterion(FabricRecipeProvider.hasItem(ModRegistry.AWNINGS.get(null).get()), FabricRecipeProvider.conditionsFromItem(ModRegistry.AWNINGS.get(null).get()))
+        .offerTo(exporter, "supplementaries/awning_"+color.asString());
+    }
     public static void blockLootTables(FabricBlockLootTableProvider provider, Color color) {
         provider.addDrop(ModRegistry.AWNINGS.get(DyeColor.byId(color.dye.getId())).get());
     }
@@ -78,12 +87,12 @@ public class SupplementariesDatagen {
             "particle", "supplementaries:block/awnings/awning_"+color.asString()));
     }
     public static void itemModels(ItemModelGenerator itemModelGenerator, Color color) {
-        itemModelGenerator.writer.accept(Identifier.of("supplementaries", "awning_"+color.asString()), DyeCommon.parentWithTexturesModel(
+        itemModelGenerator.writer.accept(Identifier.of("supplementaries", "item/awning_"+color.asString()), DyeCommon.parentWithTexturesModel(
             "supplementaries:item/awning",
             "1", "supplementaries:block/awnings/awning_"+color.asString(),
             "up", "supplementaries:block/awnings/awning_"+color.asString()+"_side",
             "particle", "supplementaries:block/awnings/awning_"+color.asString()));
-        itemModelGenerator.writer.accept(Identifier.of("supplementaries", "bunting_"+color.asString()), DyeCommon.parentWithTexturesModel(
+        itemModelGenerator.writer.accept(Identifier.of("supplementaries", "item/bunting_"+color.asString()), DyeCommon.parentWithTexturesModel(
             "item/generated", "layer0", "supplementaries:item/buntings/bunting_"+color.asString()));
     }
     public static void langEnglish(TranslationBuilder builder, Color color) {

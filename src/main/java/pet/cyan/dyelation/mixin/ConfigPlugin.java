@@ -34,6 +34,8 @@ public class ConfigPlugin implements IMixinConfigPlugin {
             return FabricLoader.getInstance().isModLoaded("spelunkery");
         } else if (mixinClassName.contains("pet.cyan.dyelation.mixin.verdant")) {
             return FabricLoader.getInstance().isModLoaded("verdant");
+        } else if (mixinClassName.contains("pet.cyan.dyelation.mixin.hexical")) {
+            return FabricLoader.getInstance().isModLoaded("hexical");
         } else {
             return true;
         }

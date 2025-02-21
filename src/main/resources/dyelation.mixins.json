@@ -15,7 +15,9 @@
 		"spelunkery.ThrownGlowstickEntityMixin",
 		"spelunkery.ModCreativeTabsMixin",
 		"verdant.ModCreativeTabMixin",
-		"verdant.WeatheringHelperMixin"
+		"verdant.WeatheringHelperMixin",
+		"hexical.OpGetDyeMixin",
+		"hexical.DyeIotaMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,7 +1,7 @@
-// 1.20.1	2025-02-20T16:12:14.3931188	Dyelation/Tags for minecraft:block
+// 1.20.1	2025-02-21T13:19:30.5245061	Dyelation/Tags for minecraft:block
 ba2a9820fa5d541b8c36a5cc9d2dc099436d7b89 data\supplementaries\tags\blocks\sacks.json
-585075573287fc06ad77580bfcb0ed1b6892fa0b data\minecraft\tags\blocks\ceiling_hanging_signs.json
 5a0704f21188e14cf17fc66e92aa3b3e33c1c278 data\minecraft\tags\blocks\wall_hanging_signs.json
+585075573287fc06ad77580bfcb0ed1b6892fa0b data\minecraft\tags\blocks\ceiling_hanging_signs.json
 af624135fc2e3835ce811b6bef11ccdfb701e70c data\another_furniture\tags\blocks\lamps.json
 44157f2bb4bdea008c080766710113584403ea53 data\adorn\tags\blocks\sofas.json
 2213f4689f6df44c737d37853b7353db874ba58b data\minecraft\tags\blocks\guarded_by_piglins.json

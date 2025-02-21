@@ -16,6 +16,9 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	flatDir {
+		dirs("libs")
+	}
 	maven {
 		name = "Modrinth"
 		url = "https://api.modrinth.com/maven"
@@ -36,6 +39,7 @@ repositories {
 		url = 'https://maven.greenhouseteam.dev/releases/'
 	}
 	maven { url = "https://mvn.devos.one/releases/" } // Porting Lib
+	maven { url = "https://mvn.devos.one/snapshots/" }
 	maven {
 		url "https://maven.jamieswhiteshirt.com/libs-release" // Reach Entity Attributes (Required by Porting Lib)
 		content {
@@ -58,6 +62,7 @@ repositories {
 	}
 	maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/releases/" }
+	maven { url "https://maven.blamejared.com/" }
 }
 
 loom {
@@ -125,7 +130,15 @@ dependencies {
 	// Amendments (candles on skulls, banners on ceilings)
 	modCompileOnly("maven.modrinth:amendments:1.20-${project.amendments_version}")
 	modLocalRuntime("maven.modrinth:amendments:1.20-${project.amendments_version}")
-	// Hex Casting here
+	// Hex Casting (pigments - also required for Hexical)
+	modCompileOnly("at.petra-k.hexcasting:hexcasting-fabric-${minecraft_version}:${hex_casting_version}") {
+        // If not excluded here, calls a nonexistent method and crashes the dev client
+        exclude module: "phosphor"
+    }
+	modLocalRuntime("at.petra-k.hexcasting:hexcasting-fabric-${minecraft_version}:${hex_casting_version}") {
+        // If not excluded here, calls a nonexistent method and crashes the dev client
+        exclude module: "phosphor"
+    }
 	// Supplementaries (mostly handled by Dye Depot itself, but still need to fix buntings, awnings)
 	modCompileOnly("maven.modrinth:supplementaries:${project.supplementaries_version}")
 	modLocalRuntime("maven.modrinth:supplementaries:${project.supplementaries_version}")
@@ -138,6 +151,24 @@ dependencies {
 	// Moonlight Lib - required for Spelunkery, Verdant, Amendments, Supplementaries, SuppSq
 	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
 	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
+	// ALL of the below are required for Hex Casting
+	modCompileOnly("at.petra-k.paucal:paucal-fabric-${minecraft_version}:${paucal_version}")
+    modCompileOnly("vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FABRIC")
+    modCompileOnly("dev.onyxstudios.cardinal-components-api:cardinal-components-api:${cca_version}")
+    modCompileOnly("com.jamieswhiteshirt:reach-entity-attributes:${entity_reach_version}")
+    modCompileOnly("dyelation:serialization-hooks-${serialization_hooks_version}")
+    modCompileOnly("dev.emi:trinkets:${trinkets_version}")
+	modCompileOnly("me.shedaniel.cloth:cloth-config-fabric:${cloth_config_version}")
+	modCompileOnly("com.samsthenerd.inline:inline-fabric:${project.minecraft_version}-${project.inline_version}")
+	modLocalRuntime("at.petra-k.paucal:paucal-fabric-${minecraft_version}:${paucal_version}")
+    modLocalRuntime("vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FABRIC")
+    modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-api:${cca_version}")
+    modLocalRuntime("com.jamieswhiteshirt:reach-entity-attributes:${entity_reach_version}")
+    modLocalRuntime("dyelation:serialization-hooks-${serialization_hooks_version}")
+    modLocalRuntime("dev.emi:trinkets:${trinkets_version}")
+	modLocalRuntime("me.shedaniel.cloth:cloth-config-fabric:${cloth_config_version}")
+	modLocalRuntime("com.samsthenerd.inline:inline-fabric:${project.minecraft_version}-${project.inline_version}")
+	
 
 	// CLIENT-SIDE MODS FOR TESTING
 	// EMI - recipe viewer
@@ -146,63 +177,6 @@ dependencies {
 	modLocalRuntime("maven.modrinth:jade:${project.jade_version}+fabric")
 	// Mod Menu - mod list
 	modLocalRuntime("com.terraformersmc:modmenu:${project.modmenu_version}")
-
-	/*
-	// dependencies of the below mods
-	modLocalRuntime("net.fabricmc:fabric-language-kotlin:${project.kotlin_version}")
-	modLocalRuntime("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
-	modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
-	modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
-	modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}")
-	modLocalRuntime("dev.onyxstudios.cardinal-components-api:cardinal-components-block:${project.cca_version}")
-	modLocalRuntime("maven.modrinth:paucal:${project.paucal_version}")
-	modLocalRuntime("maven.modrinth:cloth-config:${project.cloth_config_version}+fabric")
-	modLocalRuntime("maven.modrinth:patchouli:${project.minecraft_version}-${project.patchouli_version}-fabric")
-	modLocalRuntime("maven.modrinth:inline:${project.minecraft_version}-${project.inline_version}-fabric")
-	modLocalRuntime("maven.modrinth:balm:${project.balm_version}+fabric-${project.minecraft_version}")
-	modLocalRuntime("me.zeroeightsix:fiber:${project.fiber_version}")
-	modLocalRuntime("com.github.Chocohead:Fabric-ASM:${project.fabricasm_version}")
-	
-	modCompileOnly("net.fabricmc:fabric-language-kotlin:${project.kotlin_version}")
-	modCompileOnly("maven.modrinth:moonlight:fabric_1.20-${project.moonlight_version}")
-	modCompileOnly("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
-	modCompileOnly("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
-	modCompileOnly("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}")
-	modCompileOnly("dev.onyxstudios.cardinal-components-api:cardinal-components-block:${project.cca_version}")
-	modCompileOnly("maven.modrinth:paucal:${project.paucal_version}")
-	modCompileOnly("maven.modrinth:cloth-config:${project.cloth_config_version}+fabric")
-	modCompileOnly("maven.modrinth:patchouli:${project.minecraft_version}-${project.patchouli_version}-fabric")
-	modCompileOnly("maven.modrinth:inline:${project.minecraft_version}-${project.inline_version}-fabric")
-	modCompileOnly("maven.modrinth:balm:${project.balm_version}+fabric-${project.minecraft_version}")
-	modCompileOnly("me.zeroeightsix:fiber:${project.fiber_version}")
-	modCompileOnly("com.github.Chocohead:Fabric-ASM:${project.fabricasm_version}")
-	//modLocalRuntime(include("io.github.tropheusj:serialization-hooks:${project.serialization_hooks_version}"))
-	//modCompileOnly(include("io.github.tropheusj:serialization-hooks:${project.serialization_hooks_version}"))
-
-	// OPTIONAL mods that i want access to the code for
-	modCompileOnly("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
-	modCompileOnly("maven.modrinth:desiremod:${project.desire_version}-${project.minecraft_version}")
-	modCompileOnly("maven.modrinth:farmers-delight-refabricated:${project.minecraft_version}-${project.farmers_delight_version}")
-	modCompileOnly("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
-	modCompileOnly("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
-	modCompileOnly("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
-
-	// OPTIONAL mods for testing - comment out ones not to test with
-	// mods also in the above section
-	modLocalRuntime("maven.modrinth:bundle-backportish:${project.bundle_backportish_version}")
-	modLocalRuntime("maven.modrinth:desiremod:${project.desire_version}-${project.minecraft_version}")
-	modLocalRuntime("maven.modrinth:farmers-delight-refabricated:${project.minecraft_version}-${project.farmers_delight_version}")
-	modLocalRuntime("maven.modrinth:items-displayed:${project.items_displayed_version}-${project.minecraft_version}")
-	modLocalRuntime("maven.modrinth:spelunkery:${project.minecraft_version}-${project.spelunkery_version}")
-	modLocalRuntime("maven.modrinth:verdant-mod:${project.minecraft_version}-${project.verdant_version}")
-	// mods NOT in the above section
-	modLocalRuntime("maven.modrinth:adorn:${project.adorn_version}-fabric")
-	modLocalRuntime("maven.modrinth:amendments:1.20-${project.amendments_version}")
-	modLocalRuntime("maven.modrinth:hex-casting:${project.hex_casting_version}")
-	modLocalRuntime("maven.modrinth:supplementaries:${project.supplementaries_version}")
-	modLocalRuntime("maven.modrinth:supplementaries-squared:1.20-${project.supplementaries_squared_version}")
-	modLocalRuntime("maven.modrinth:waystones:${project.waystones_version}+fabric-${project.minecraft_version}")
-	*/
 }
 
 processResources {

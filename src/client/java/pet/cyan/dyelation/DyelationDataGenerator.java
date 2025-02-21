@@ -51,6 +51,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AdornDatagen.recipes(exporter, color);
 				SupplementariesDatagen.recipes(exporter, color);
 				SuppSquaredDatagen.recipes(exporter, color);
+				HexCastingDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -147,6 +148,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AdornDatagen.itemModels(itemModelGenerator, color);
 				SupplementariesDatagen.itemModels(itemModelGenerator, color);
 				SuppSquaredDatagen.itemModels(itemModelGenerator, color);
+				HexCastingDatagen.itemModels(itemModelGenerator, color);
 			});
 		}
 	}
@@ -170,6 +172,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AdornDatagen.langEnglish(translationBuilder, color);
 				SupplementariesDatagen.langEnglish(translationBuilder, color);
 				SuppSquaredDatagen.langEnglish(translationBuilder, color);
+				HexCastingDatagen.langEnglish(translationBuilder, color);
 			});
 			try {
 				Path path = dataOutput.getModContainer().findPath("assets/dyelation/lang/en_us.fixes.json").get();

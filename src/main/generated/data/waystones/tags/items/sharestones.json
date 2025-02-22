@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "waystones:maroon_sharestone",
+    "waystones:rose_sharestone",
+    "waystones:coral_sharestone",
+    "waystones:indigo_sharestone",
+    "waystones:navy_sharestone",
+    "waystones:slate_sharestone",
+    "waystones:olive_sharestone",
+    "waystones:amber_sharestone",
+    "waystones:beige_sharestone",
+    "waystones:teal_sharestone",
+    "waystones:mint_sharestone",
+    "waystones:aqua_sharestone",
+    "waystones:verdant_sharestone",
+    "waystones:forest_sharestone",
+    "waystones:ginger_sharestone",
+    "waystones:tan_sharestone"
+  ]
+}

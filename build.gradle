@@ -151,7 +151,9 @@ dependencies {
 	// SuppSquared (sacks, gold candle holders)
 	modCompileOnly("maven.modrinth:supplementaries-squared:1.20-${project.supplementaries_squared_version}")
 	modLocalRuntime("maven.modrinth:supplementaries-squared:1.20-${project.supplementaries_squared_version}")
-	// Waystones here
+	// Waystones (sharestones)
+	modCompileOnly("maven.modrinth:waystones:${project.waystones_version}")
+	modLocalRuntime("maven.modrinth:waystones:${project.waystones_version}")
 
 	// REQUIREMENTS FOR ANY ABOVE MODS
 	// Moonlight Lib - required for Spelunkery, Verdant, Amendments, Supplementaries, SuppSq
@@ -176,6 +178,9 @@ dependencies {
 	modLocalRuntime("com.samsthenerd.inline:inline-fabric:${project.minecraft_version}-${project.inline_version}")
 	modCompileOnly("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}+1.20")
 	modLocalRuntime("dev.kosmx.player-anim:player-animation-lib-fabric:${project.player_anim_version}+1.20")
+	// Balm - for waystones
+	modCompileOnly("maven.modrinth:balm:${project.balm_version}+fabric-${project.minecraft_version}")
+	modLocalRuntime("maven.modrinth:balm:${project.balm_version}+fabric-${project.minecraft_version}")
 	
 
 	// CLIENT-SIDE MODS FOR TESTING

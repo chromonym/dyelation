@@ -52,6 +52,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				SupplementariesDatagen.recipes(exporter, color);
 				SuppSquaredDatagen.recipes(exporter, color);
 				HexCastingDatagen.recipes(exporter, color);
+				WaystonesDatagen.recipes(exporter, color);
 			});
 		}
 	}
@@ -88,6 +89,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				VerdantDatagen.itemTags(this, color);
 				AdornDatagen.itemTags(this, color);
 				SuppSquaredDatagen.itemTags(this, color);
+				WaystonesDatagen.itemTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateItemTagBuilder(TagKey<Item> tagKey) {
@@ -109,6 +111,7 @@ public class DyelationDataGenerator implements DataGeneratorEntrypoint {
 				AdornDatagen.blockTags(this, color);
 				SupplementariesDatagen.blockTags(this, color);
 				SuppSquaredDatagen.blockTags(this, color);
+				WaystonesDatagen.blockTags(this, color);
 			});
 		}
 		public FabricTagBuilder getOrCreateBlockTagBuilder(TagKey<Block> tagKey) {

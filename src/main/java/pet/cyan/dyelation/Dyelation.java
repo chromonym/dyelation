@@ -1,7 +1,12 @@
 package pet.cyan.dyelation;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import pet.cyan.dyelation.interop.*;
 
 import org.slf4j.Logger;
@@ -49,5 +54,9 @@ public class Dyelation implements ModInitializer {
 			LOGGER.info("Verdant loaded, running setup");
 			Verdant.initialize();
 		}
+
+		ModContainer modContainer = fl.getModContainer(MOD_ID).orElseThrow(() -> new IllegalStateException("Dyelation's ModContainer couldn't be found!"));
+		ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, "dye_override_extended"), modContainer, Text.of("Dye Override Extended"), ResourcePackActivationType.DEFAULT_ENABLED);
+
 	}
 }

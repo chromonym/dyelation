@@ -3,15 +3,16 @@
 	"id": "dyelation",
 	"version": "${version}",
 	"name": "Dyelation",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds compatibility between Dye Depot and several other mods",
 	"authors": [
-		"Me!"
+		"chromonym"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/mod/dyelation",
+		"sources": "https://github.com/chromonym/dyelation",
+		"issues": "https://github.com/chromonym/dyelation/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/dyelation/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -39,15 +40,18 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
+		"adorn": "*",
+		"amendments": "*",
 		"another_furniture": "*",
 		"bundle-backportish": "*",
 		"desire": "*",
 		"farmersdelight": "*",
+		"hexcasting": "*",
 		"items_displayed": "*",
 		"spelunkery": "*",
+		"supplementaries": "*",
+		"suppsquared": "*",
 		"verdant": "*",
-		"adorn": "*",
-		"amendments": "*",
-		"supplementaries": "*"
+		"waystones": "*"
 	}
 }

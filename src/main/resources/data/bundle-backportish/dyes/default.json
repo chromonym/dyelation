@@ -1,0 +1,24 @@
+{
+    "blocks": {},
+    "items": {
+        "bundle-backportish:bundle": {
+            "minecraft:bundle": "uncolored",
+            "bundle-backportish:white_bundle": "white",
+            "bundle-backportish:orange_bundle": "orange",
+            "bundle-backportish:magenta_bundle": "magenta",
+            "bundle-backportish:light_blue_bundle": "light_blue",
+            "bundle-backportish:yellow_bundle": "yellow",
+            "bundle-backportish:lime_bundle": "lime",
+            "bundle-backportish:pink_bundle": "pink",
+            "bundle-backportish:gray_bundle": "gray",
+            "bundle-backportish:light_gray_bundle": "light_gray",
+            "bundle-backportish:cyan_bundle": "cyan",
+            "bundle-backportish:purple_bundle": "purple",
+            "bundle-backportish:blue_bundle": "blue",
+            "bundle-backportish:brown_bundle": "brown",
+            "bundle-backportish:green_bundle": "green",
+            "bundle-backportish:red_bundle": "red",
+            "bundle-backportish:black_bundle": "black"
+        }
+    }
+}

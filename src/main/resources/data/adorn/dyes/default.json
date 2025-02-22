@@ -1,0 +1,61 @@
+{
+    "blocks": {
+        "adorn:table_lamp": {
+            "adorn:white_table_lamp": "white",
+            "adorn:orange_table_lamp": "orange",
+            "adorn:magenta_table_lamp": "magenta",
+            "adorn:light_blue_table_lamp": "light_blue",
+            "adorn:yellow_table_lamp": "yellow",
+            "adorn:lime_table_lamp": "lime",
+            "adorn:pink_table_lamp": "pink",
+            "adorn:gray_table_lamp": "gray",
+            "adorn:light_gray_table_lamp": "light_gray",
+            "adorn:cyan_table_lamp": "cyan",
+            "adorn:purple_table_lamp": "purple",
+            "adorn:blue_table_lamp": "blue",
+            "adorn:brown_table_lamp": "brown",
+            "adorn:green_table_lamp": "green",
+            "adorn:red_table_lamp": "red",
+            "adorn:black_table_lamp": "black"
+        }
+    },
+    "items": {
+        "adorn:sofa": {
+            "adorn:white_sofa": "white",
+            "adorn:orange_sofa": "orange",
+            "adorn:magenta_sofa": "magenta",
+            "adorn:light_blue_sofa": "light_blue",
+            "adorn:yellow_sofa": "yellow",
+            "adorn:lime_sofa": "lime",
+            "adorn:pink_sofa": "pink",
+            "adorn:gray_sofa": "gray",
+            "adorn:light_gray_sofa": "light_gray",
+            "adorn:cyan_sofa": "cyan",
+            "adorn:purple_sofa": "purple",
+            "adorn:blue_sofa": "blue",
+            "adorn:brown_sofa": "brown",
+            "adorn:green_sofa": "green",
+            "adorn:red_sofa": "red",
+            "adorn:black_sofa": "black"
+        },
+        "adorn:candlelit_lantern": {
+            "adorn:candlelit_lantern": "uncolored",
+            "adorn:white_candlelit_lantern": "white",
+            "adorn:orange_candlelit_lantern": "orange",
+            "adorn:magenta_candlelit_lantern": "magenta",
+            "adorn:light_blue_candlelit_lantern": "light_blue",
+            "adorn:yellow_candlelit_lantern": "yellow",
+            "adorn:lime_candlelit_lantern": "lime",
+            "adorn:pink_candlelit_lantern": "pink",
+            "adorn:gray_candlelit_lantern": "gray",
+            "adorn:light_gray_candlelit_lantern": "light_gray",
+            "adorn:cyan_candlelit_lantern": "cyan",
+            "adorn:purple_candlelit_lantern": "purple",
+            "adorn:blue_candlelit_lantern": "blue",
+            "adorn:brown_candlelit_lantern": "brown",
+            "adorn:green_candlelit_lantern": "green",
+            "adorn:red_candlelit_lantern": "red",
+            "adorn:black_candlelit_lantern": "black"
+        }
+    }
+}

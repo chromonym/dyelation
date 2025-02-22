@@ -1,0 +1,41 @@
+{
+    "blocks": {},
+    "items": {
+        "suppsquared:gold_candle_holder": {
+            "suppsquared:gold_candle_holder_maroon": "maroon",
+            "suppsquared:gold_candle_holder_rose": "rose",
+            "suppsquared:gold_candle_holder_coral": "coral",
+            "suppsquared:gold_candle_holder_indigo": "indigo",
+            "suppsquared:gold_candle_holder_navy": "navy",
+            "suppsquared:gold_candle_holder_slate": "slate",
+            "suppsquared:gold_candle_holder_olive": "olive",
+            "suppsquared:gold_candle_holder_amber": "amber",
+            "suppsquared:gold_candle_holder_beige": "beige",
+            "suppsquared:gold_candle_holder_teal": "teal",
+            "suppsquared:gold_candle_holder_mint": "mint",
+            "suppsquared:gold_candle_holder_aqua": "aqua",
+            "suppsquared:gold_candle_holder_verdant": "verdant",
+            "suppsquared:gold_candle_holder_forest": "forest",
+            "suppsquared:gold_candle_holder_ginger": "ginger",
+            "suppsquared:gold_candle_holder_tan": "tan"
+        },
+        "suppsquared:sack": {
+            "suppsquared:sack_maroon": "maroon",
+            "suppsquared:sack_rose": "rose",
+            "suppsquared:sack_coral": "coral",
+            "suppsquared:sack_indigo": "indigo",
+            "suppsquared:sack_navy": "navy",
+            "suppsquared:sack_slate": "slate",
+            "suppsquared:sack_olive": "olive",
+            "suppsquared:sack_amber": "amber",
+            "suppsquared:sack_beige": "beige",
+            "suppsquared:sack_teal": "teal",
+            "suppsquared:sack_mint": "mint",
+            "suppsquared:sack_aqua": "aqua",
+            "suppsquared:sack_verdant": "verdant",
+            "suppsquared:sack_forest": "forest",
+            "suppsquared:sack_ginger": "ginger",
+            "suppsquared:sack_tan": "tan"
+        }
+    }
+}

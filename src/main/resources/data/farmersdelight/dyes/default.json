@@ -1,0 +1,43 @@
+{
+    "blocks": {},
+    "items": {
+        "farmersdelight:canvas_sign": {
+            "farmersdelight:canvas_sign": "uncolored",
+            "farmersdelight:white_canvas_sign": "white",
+            "farmersdelight:orange_canvas_sign": "orange",
+            "farmersdelight:magenta_canvas_sign": "magenta",
+            "farmersdelight:light_blue_canvas_sign": "light_blue",
+            "farmersdelight:yellow_canvas_sign": "yellow",
+            "farmersdelight:lime_canvas_sign": "lime",
+            "farmersdelight:pink_canvas_sign": "pink",
+            "farmersdelight:gray_canvas_sign": "gray",
+            "farmersdelight:light_gray_canvas_sign": "light_gray",
+            "farmersdelight:cyan_canvas_sign": "cyan",
+            "farmersdelight:purple_canvas_sign": "purple",
+            "farmersdelight:blue_canvas_sign": "blue",
+            "farmersdelight:brown_canvas_sign": "brown",
+            "farmersdelight:green_canvas_sign": "green",
+            "farmersdelight:red_canvas_sign": "red",
+            "farmersdelight:black_canvas_sign": "black"
+        },
+        "farmersdelight:hanging_canvas_sign": {
+            "farmersdelight:hanging_canvas_sign": "uncolored",
+            "farmersdelight:white_hanging_canvas_sign": "white",
+            "farmersdelight:orange_hanging_canvas_sign": "orange",
+            "farmersdelight:magenta_hanging_canvas_sign": "magenta",
+            "farmersdelight:light_blue_hanging_canvas_sign": "light_blue",
+            "farmersdelight:yellow_hanging_canvas_sign": "yellow",
+            "farmersdelight:lime_hanging_canvas_sign": "lime",
+            "farmersdelight:pink_hanging_canvas_sign": "pink",
+            "farmersdelight:gray_hanging_canvas_sign": "gray",
+            "farmersdelight:light_gray_hanging_canvas_sign": "light_gray",
+            "farmersdelight:cyan_hanging_canvas_sign": "cyan",
+            "farmersdelight:purple_hanging_canvas_sign": "purple",
+            "farmersdelight:blue_hanging_canvas_sign": "blue",
+            "farmersdelight:brown_hanging_canvas_sign": "brown",
+            "farmersdelight:green_hanging_canvas_sign": "green",
+            "farmersdelight:red_hanging_canvas_sign": "red",
+            "farmersdelight:black_hanging_canvas_sign": "black"
+        }
+    }
+}

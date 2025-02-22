@@ -1,0 +1,41 @@
+{
+    "blocks": {},
+    "items": {
+        "farmersdelight:canvas_sign": {
+            "dyelation:farmersdelight/maroon_canvas_sign": "maroon",
+            "dyelation:farmersdelight/rose_canvas_sign": "rose",
+            "dyelation:farmersdelight/coral_canvas_sign": "coral",
+            "dyelation:farmersdelight/indigo_canvas_sign": "indigo",
+            "dyelation:farmersdelight/navy_canvas_sign": "navy",
+            "dyelation:farmersdelight/slate_canvas_sign": "slate",
+            "dyelation:farmersdelight/olive_canvas_sign": "olive",
+            "dyelation:farmersdelight/amber_canvas_sign": "amber",
+            "dyelation:farmersdelight/beige_canvas_sign": "beige",
+            "dyelation:farmersdelight/teal_canvas_sign": "teal",
+            "dyelation:farmersdelight/mint_canvas_sign": "mint",
+            "dyelation:farmersdelight/aqua_canvas_sign": "aqua",
+            "dyelation:farmersdelight/verdant_canvas_sign": "verdant",
+            "dyelation:farmersdelight/forest_canvas_sign": "forest",
+            "dyelation:farmersdelight/ginger_canvas_sign": "ginger",
+            "dyelation:farmersdelight/tan_canvas_sign": "tan"
+        },
+        "farmersdelight:hanging_canvas_sign": {
+            "dyelation:farmersdelight/maroon_hanging_canvas_sign": "maroon",
+            "dyelation:farmersdelight/rose_hanging_canvas_sign": "rose",
+            "dyelation:farmersdelight/coral_hanging_canvas_sign": "coral",
+            "dyelation:farmersdelight/indigo_hanging_canvas_sign": "indigo",
+            "dyelation:farmersdelight/navy_hanging_canvas_sign": "navy",
+            "dyelation:farmersdelight/slate_hanging_canvas_sign": "slate",
+            "dyelation:farmersdelight/olive_hanging_canvas_sign": "olive",
+            "dyelation:farmersdelight/amber_hanging_canvas_sign": "amber",
+            "dyelation:farmersdelight/beige_hanging_canvas_sign": "beige",
+            "dyelation:farmersdelight/teal_hanging_canvas_sign": "teal",
+            "dyelation:farmersdelight/mint_hanging_canvas_sign": "mint",
+            "dyelation:farmersdelight/aqua_hanging_canvas_sign": "aqua",
+            "dyelation:farmersdelight/verdant_hanging_canvas_sign": "verdant",
+            "dyelation:farmersdelight/forest_hanging_canvas_sign": "forest",
+            "dyelation:farmersdelight/ginger_hanging_canvas_sign": "ginger",
+            "dyelation:farmersdelight/tan_hanging_canvas_sign": "tan"
+        }
+    }
+}

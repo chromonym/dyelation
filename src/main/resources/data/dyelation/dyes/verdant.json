@@ -1,0 +1,23 @@
+{
+    "blocks": {
+        "verdant:primrose": {
+            "dyelation:verdant/maroon_primrose": "maroon",
+            "dyelation:verdant/rose_primrose": "rose",
+            "dyelation:verdant/coral_primrose": "coral",
+            "dyelation:verdant/indigo_primrose": "indigo",
+            "dyelation:verdant/navy_primrose": "navy",
+            "dyelation:verdant/slate_primrose": "slate",
+            "dyelation:verdant/olive_primrose": "olive",
+            "dyelation:verdant/amber_primrose": "amber",
+            "dyelation:verdant/beige_primrose": "beige",
+            "dyelation:verdant/teal_primrose": "teal",
+            "dyelation:verdant/mint_primrose": "mint",
+            "dyelation:verdant/aqua_primrose": "aqua",
+            "dyelation:verdant/verdant_primrose": "verdant",
+            "dyelation:verdant/forest_primrose": "forest",
+            "dyelation:verdant/ginger_primrose": "ginger",
+            "dyelation:verdant/tan_primrose": "tan"
+        }
+    },
+    "items": {}
+}

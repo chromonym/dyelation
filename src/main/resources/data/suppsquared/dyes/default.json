@@ -1,0 +1,43 @@
+{
+    "blocks": {},
+    "items": {
+        "suppsquared:gold_candle_holder": {
+            "suppsquared:gold_candle_holder": "uncolored",
+            "suppsquared:gold_candle_holder_white": "white",
+            "suppsquared:gold_candle_holder_orange": "orange",
+            "suppsquared:gold_candle_holder_magenta": "magenta",
+            "suppsquared:gold_candle_holder_light_blue": "light_blue",
+            "suppsquared:gold_candle_holder_yellow": "yellow",
+            "suppsquared:gold_candle_holder_lime": "lime",
+            "suppsquared:gold_candle_holder_pink": "pink",
+            "suppsquared:gold_candle_holder_gray": "gray",
+            "suppsquared:gold_candle_holder_light_gray": "light_gray",
+            "suppsquared:gold_candle_holder_cyan": "cyan",
+            "suppsquared:gold_candle_holder_purple": "purple",
+            "suppsquared:gold_candle_holder_blue": "blue",
+            "suppsquared:gold_candle_holder_brown": "brown",
+            "suppsquared:gold_candle_holder_green": "green",
+            "suppsquared:gold_candle_holder_red": "red",
+            "suppsquared:gold_candle_holder_black": "black"
+        },
+        "suppsquared:sack": {
+            "supplementaries:sack": "uncolored",
+            "suppsquared:sack_white": "white",
+            "suppsquared:sack_orange": "orange",
+            "suppsquared:sack_magenta": "magenta",
+            "suppsquared:sack_light_blue": "light_blue",
+            "suppsquared:sack_yellow": "yellow",
+            "suppsquared:sack_lime": "lime",
+            "suppsquared:sack_pink": "pink",
+            "suppsquared:sack_gray": "gray",
+            "suppsquared:sack_light_gray": "light_gray",
+            "suppsquared:sack_cyan": "cyan",
+            "suppsquared:sack_purple": "purple",
+            "suppsquared:sack_blue": "blue",
+            "suppsquared:sack_brown": "brown",
+            "suppsquared:sack_green": "green",
+            "suppsquared:sack_red": "red",
+            "suppsquared:sack_black": "black"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "blocks": {
+        "spelunkery:glowstick": {
+            "dyelation:spelunkery/maroon_glowstick": "maroon",
+            "dyelation:spelunkery/rose_glowstick": "rose",
+            "dyelation:spelunkery/coral_glowstick": "coral",
+            "dyelation:spelunkery/indigo_glowstick": "indigo",
+            "dyelation:spelunkery/navy_glowstick": "navy",
+            "dyelation:spelunkery/slate_glowstick": "slate",
+            "dyelation:spelunkery/olive_glowstick": "olive",
+            "dyelation:spelunkery/amber_glowstick": "amber",
+            "dyelation:spelunkery/beige_glowstick": "beige",
+            "dyelation:spelunkery/teal_glowstick": "teal",
+            "dyelation:spelunkery/mint_glowstick": "mint",
+            "dyelation:spelunkery/aqua_glowstick": "aqua",
+            "dyelation:spelunkery/verdant_glowstick": "verdant",
+            "dyelation:spelunkery/forest_glowstick": "forest",
+            "dyelation:spelunkery/ginger_glowstick": "ginger",
+            "dyelation:spelunkery/tan_glowstick": "tan"
+        }
+    },
+    "items": {}
+}

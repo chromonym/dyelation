@@ -1,0 +1,23 @@
+{
+    "blocks": {},
+    "items": {
+        "bundle-backportish:bundle": {
+            "dyelation:bundle-backportish/maroon_bundle": "maroon",
+            "dyelation:bundle-backportish/rose_bundle": "rose",
+            "dyelation:bundle-backportish/coral_bundle": "coral",
+            "dyelation:bundle-backportish/indigo_bundle": "indigo",
+            "dyelation:bundle-backportish/navy_bundle": "navy",
+            "dyelation:bundle-backportish/slate_bundle": "slate",
+            "dyelation:bundle-backportish/olive_bundle": "olive",
+            "dyelation:bundle-backportish/amber_bundle": "amber",
+            "dyelation:bundle-backportish/beige_bundle": "beige",
+            "dyelation:bundle-backportish/teal_bundle": "teal",
+            "dyelation:bundle-backportish/mint_bundle": "mint",
+            "dyelation:bundle-backportish/aqua_bundle": "aqua",
+            "dyelation:bundle-backportish/verdant_bundle": "verdant",
+            "dyelation:bundle-backportish/forest_bundle": "forest",
+            "dyelation:bundle-backportish/ginger_bundle": "ginger",
+            "dyelation:bundle-backportish/tan_bundle": "tan"
+        }
+    }
+}

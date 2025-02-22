@@ -1,0 +1,24 @@
+{
+    "blocks": {
+        "spelunkery:glowstick": {
+            "spelunkery:glowstick": "uncolored",
+            "spelunkery:white_glowstick": "white",
+            "spelunkery:orange_glowstick": "orange",
+            "spelunkery:magenta_glowstick": "magenta",
+            "spelunkery:light_blue_glowstick": "light_blue",
+            "spelunkery:yellow_glowstick": "yellow",
+            "spelunkery:lime_glowstick": "lime",
+            "spelunkery:pink_glowstick": "pink",
+            "spelunkery:gray_glowstick": "gray",
+            "spelunkery:light_gray_glowstick": "light_gray",
+            "spelunkery:cyan_glowstick": "cyan",
+            "spelunkery:purple_glowstick": "purple",
+            "spelunkery:blue_glowstick": "blue",
+            "spelunkery:brown_glowstick": "brown",
+            "spelunkery:green_glowstick": "green",
+            "spelunkery:red_glowstick": "red",
+            "spelunkery:black_glowstick": "black"
+        }
+    },
+    "items": {}
+}

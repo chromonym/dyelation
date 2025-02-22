@@ -1,0 +1,60 @@
+{
+    "blocks": {
+        "adorn:table_lamp": {
+            "adorn:maroon_table_lamp": "maroon",
+            "adorn:rose_table_lamp": "rose",
+            "adorn:coral_table_lamp": "coral",
+            "adorn:indigo_table_lamp": "indigo",
+            "adorn:navy_table_lamp": "navy",
+            "adorn:slate_table_lamp": "slate",
+            "adorn:olive_table_lamp": "olive",
+            "adorn:amber_table_lamp": "amber",
+            "adorn:beige_table_lamp": "beige",
+            "adorn:teal_table_lamp": "teal",
+            "adorn:mint_table_lamp": "mint",
+            "adorn:aqua_table_lamp": "aqua",
+            "adorn:verdant_table_lamp": "verdant",
+            "adorn:forest_table_lamp": "forest",
+            "adorn:ginger_table_lamp": "ginger",
+            "adorn:tan_table_lamp": "tan"
+        }
+    },
+    "items": {
+        "adorn:sofa": {
+            "adorn:maroon_sofa": "maroon",
+            "adorn:rose_sofa": "rose",
+            "adorn:coral_sofa": "coral",
+            "adorn:indigo_sofa": "indigo",
+            "adorn:navy_sofa": "navy",
+            "adorn:slate_sofa": "slate",
+            "adorn:olive_sofa": "olive",
+            "adorn:amber_sofa": "amber",
+            "adorn:beige_sofa": "beige",
+            "adorn:teal_sofa": "teal",
+            "adorn:mint_sofa": "mint",
+            "adorn:aqua_sofa": "aqua",
+            "adorn:verdant_sofa": "verdant",
+            "adorn:forest_sofa": "forest",
+            "adorn:ginger_sofa": "ginger",
+            "adorn:tan_sofa": "tan"
+        },
+        "adorn:candlelit_lantern": {
+            "adorn:maroon_candlelit_lantern": "maroon",
+            "adorn:rose_candlelit_lantern": "rose",
+            "adorn:coral_candlelit_lantern": "coral",
+            "adorn:indigo_candlelit_lantern": "indigo",
+            "adorn:navy_candlelit_lantern": "navy",
+            "adorn:slate_candlelit_lantern": "slate",
+            "adorn:olive_candlelit_lantern": "olive",
+            "adorn:amber_candlelit_lantern": "amber",
+            "adorn:beige_candlelit_lantern": "beige",
+            "adorn:teal_candlelit_lantern": "teal",
+            "adorn:mint_candlelit_lantern": "mint",
+            "adorn:aqua_candlelit_lantern": "aqua",
+            "adorn:verdant_candlelit_lantern": "verdant",
+            "adorn:forest_candlelit_lantern": "forest",
+            "adorn:ginger_candlelit_lantern": "ginger",
+            "adorn:tan_candlelit_lantern": "tan"
+        }
+    }
+}

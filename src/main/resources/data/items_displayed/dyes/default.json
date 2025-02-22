@@ -1,0 +1,23 @@
+{
+    "blocks": {},
+    "items": {
+        "items_displayed:jewelry_pillow": {
+            "items_displayed:white_jewelry_pillow": "white",
+            "items_displayed:orange_jewelry_pillow": "orange",
+            "items_displayed:magenta_jewelry_pillow": "magenta",
+            "items_displayed:light_blue_jewelry_pillow": "light_blue",
+            "items_displayed:yellow_jewelry_pillow": "yellow",
+            "items_displayed:lime_jewelry_pillow": "lime",
+            "items_displayed:pink_jewelry_pillow": "pink",
+            "items_displayed:gray_jewelry_pillow": "gray",
+            "items_displayed:light_gray_jewelry_pillow": "light_gray",
+            "items_displayed:cyan_jewelry_pillow": "cyan",
+            "items_displayed:purple_jewelry_pillow": "purple",
+            "items_displayed:blue_jewelry_pillow": "blue",
+            "items_displayed:brown_jewelry_pillow": "brown",
+            "items_displayed:green_jewelry_pillow": "green",
+            "items_displayed:red_jewelry_pillow": "red",
+            "items_displayed:black_jewelry_pillow": "black"
+        }
+    }
+}

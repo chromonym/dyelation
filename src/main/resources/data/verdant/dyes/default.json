@@ -1,0 +1,23 @@
+{
+    "blocks": {
+        "verdant:primrose": {
+            "verdant:white_primrose": "white",
+            "verdant:orange_primrose": "orange",
+            "verdant:magenta_primrose": "magenta",
+            "verdant:light_blue_primrose": "light_blue",
+            "verdant:yellow_primrose": "yellow",
+            "verdant:lime_primrose": "lime",
+            "verdant:pink_primrose": "pink",
+            "verdant:gray_primrose": "gray",
+            "verdant:light_gray_primrose": "light_gray",
+            "verdant:cyan_primrose": "cyan",
+            "verdant:purple_primrose": "purple",
+            "verdant:blue_primrose": "blue",
+            "verdant:brown_primrose": "brown",
+            "verdant:green_primrose": "green",
+            "verdant:red_primrose": "red",
+            "verdant:black_primrose": "black"
+        }
+    },
+    "items": {}
+}

@@ -1,0 +1,24 @@
+{
+    "blocks": {},
+    "items": {
+        "waystones:sharestone": {
+            "waystones:sharestone": "uncolored",
+            "waystones:white_sharestone": "white",
+            "waystones:orange_sharestone": "orange",
+            "waystones:magenta_sharestone": "magenta",
+            "waystones:light_blue_sharestone": "light_blue",
+            "waystones:yellow_sharestone": "yellow",
+            "waystones:lime_sharestone": "lime",
+            "waystones:pink_sharestone": "pink",
+            "waystones:gray_sharestone": "gray",
+            "waystones:light_gray_sharestone": "light_gray",
+            "waystones:cyan_sharestone": "cyan",
+            "waystones:purple_sharestone": "purple",
+            "waystones:blue_sharestone": "blue",
+            "waystones:brown_sharestone": "brown",
+            "waystones:green_sharestone": "green",
+            "waystones:red_sharestone": "red",
+            "waystones:black_sharestone": "black"
+        }
+    }
+}

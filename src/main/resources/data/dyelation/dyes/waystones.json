@@ -1,0 +1,23 @@
+{
+    "blocks": {},
+    "items": {
+        "waystones:sharestone": {
+            "waystones:maroon_sharestone": "maroon",
+            "waystones:rose_sharestone": "rose",
+            "waystones:coral_sharestone": "coral",
+            "waystones:indigo_sharestone": "indigo",
+            "waystones:navy_sharestone": "navy",
+            "waystones:slate_sharestone": "slate",
+            "waystones:olive_sharestone": "olive",
+            "waystones:amber_sharestone": "amber",
+            "waystones:beige_sharestone": "beige",
+            "waystones:teal_sharestone": "teal",
+            "waystones:mint_sharestone": "mint",
+            "waystones:aqua_sharestone": "aqua",
+            "waystones:verdant_sharestone": "verdant",
+            "waystones:forest_sharestone": "forest",
+            "waystones:ginger_sharestone": "ginger",
+            "waystones:tan_sharestone": "tan"
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "blocks": {},
+    "items": {
+        "items_displayed:jewelry_pillow": {
+            "dyelation:items_displayed/maroon_jewelry_pillow": "maroon",
+            "dyelation:items_displayed/rose_jewelry_pillow": "rose",
+            "dyelation:items_displayed/coral_jewelry_pillow": "coral",
+            "dyelation:items_displayed/indigo_jewelry_pillow": "indigo",
+            "dyelation:items_displayed/navy_jewelry_pillow": "navy",
+            "dyelation:items_displayed/slate_jewelry_pillow": "slate",
+            "dyelation:items_displayed/olive_jewelry_pillow": "olive",
+            "dyelation:items_displayed/amber_jewelry_pillow": "amber",
+            "dyelation:items_displayed/beige_jewelry_pillow": "beige",
+            "dyelation:items_displayed/teal_jewelry_pillow": "teal",
+            "dyelation:items_displayed/mint_jewelry_pillow": "mint",
+            "dyelation:items_displayed/aqua_jewelry_pillow": "aqua",
+            "dyelation:items_displayed/verdant_jewelry_pillow": "verdant",
+            "dyelation:items_displayed/forest_jewelry_pillow": "forest",
+            "dyelation:items_displayed/ginger_jewelry_pillow": "ginger",
+            "dyelation:items_displayed/tan_jewelry_pillow": "tan"
+        }
+    }
+}

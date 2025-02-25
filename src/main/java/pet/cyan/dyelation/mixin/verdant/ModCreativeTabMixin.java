@@ -14,7 +14,7 @@ import com.ordana.verdant.reg.ModCreativeTab;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.interop.Verdant;
 
-@Mixin(value = ModCreativeTab.class, remap = false)
+@Mixin(value = ModCreativeTab.class)
 public class ModCreativeTabMixin {
     @ModifyArg(method = "addItems(Lnet/mehvahdjukaar/moonlight/api/platform/RegHelper$ItemToTabEvent;)V", index = 3,
     at = @At(value = "INVOKE", target = "Lcom/ordana/verdant/reg/ModCreativeTab;after(Lnet/mehvahdjukaar/moonlight/api/platform/RegHelper$ItemToTabEvent;Lnet/minecraft/item/Item;Lnet/minecraft/registry/RegistryKey;[Ljava/util/function/Supplier;)V"))

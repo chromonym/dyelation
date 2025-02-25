@@ -12,10 +12,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import miyucomics.hexical.casting.iota.DyeIota;
 import pet.cyan.dyelation.DyeCommon;
 
-@Mixin(value = DyeIota.class, remap = false)
+@Mixin(value = DyeIota.class)
 public class DyeIotaMixin {
 
-    @Shadow
+    @Shadow(remap = false)
     @Mutable
     private static Map<String, Integer> MAP;
     

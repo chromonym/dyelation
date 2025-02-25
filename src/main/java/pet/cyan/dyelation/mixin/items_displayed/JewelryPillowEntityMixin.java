@@ -15,7 +15,7 @@ import net.minecraft.util.DyeColor;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.interop.ItemsDisplayed;
 
-@Mixin(value = JewelryPillowEntity.class, remap = false)
+@Mixin(JewelryPillowEntity.class)
 public abstract class JewelryPillowEntityMixin extends AbstractDisplayEntity {
 
     protected JewelryPillowEntityMixin() {

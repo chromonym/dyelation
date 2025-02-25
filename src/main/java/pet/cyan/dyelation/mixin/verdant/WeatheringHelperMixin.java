@@ -14,7 +14,7 @@ import net.minecraft.util.DyeColor;
 import pet.cyan.dyelation.Color;
 import pet.cyan.dyelation.interop.Verdant;
 
-@Mixin(value = WeatheringHelper.class, remap = false)
+@Mixin(value = WeatheringHelper.class)
 public class WeatheringHelperMixin {
     
     /*@Inject(method = "lambda$static$5()Lcom/google/common/collect/BiMap;", at = @At("RETURN"))

@@ -23,7 +23,7 @@ import net.minecraft.util.DyeColor;
 import pet.cyan.dyelation.DyeCommon;
 import pet.cyan.dyelation.interop.Spelunkery;
 
-@Mixin(value = ThrownGlowstickEntity.class, remap = false)
+@Mixin(value = ThrownGlowstickEntity.class)
 public abstract class ThrownGlowstickEntityMixin extends ImprovedProjectileEntity {
 
     protected ThrownGlowstickEntityMixin() {
@@ -34,7 +34,7 @@ public abstract class ThrownGlowstickEntityMixin extends ImprovedProjectileEntit
     private static TrackedData<Integer> DATA_GLOWSTICK_COLOR;
 
     @Mutable
-    @Shadow
+    @Shadow(remap = false)
     private static HashMap<DyeColor, Block> DYE_COLOR_TO_BLOCK;
     
     @Inject(method = "<clinit>()V", at = @At("RETURN"))

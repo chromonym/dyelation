@@ -13,7 +13,7 @@ import at.petrak.hexcasting.api.casting.iota.NullIota;
 import miyucomics.hexical.casting.patterns.colors.OpGetDye;
 import net.minecraft.block.entity.SignBlockEntity;
 
-@Mixin(value = OpGetDye.class, remap = false)
+@Mixin(value = OpGetDye.class)
 public class OpGetDyeMixin {
     
     @Redirect(method = "processVec3d(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/server/world/ServerWorld;)Lat/petrak/hexcasting/api/casting/iota/Iota;",
